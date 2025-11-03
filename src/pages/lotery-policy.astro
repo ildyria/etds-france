@@ -1,0 +1,167 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
+
+    <main class="max-w-5xl!">
+      <Hero title="Politique de tirage au sort" />
+
+      <section>
+        <p class="mx-auto w-3/4 text-justify">
+          L’ETDS Automne 2025 utilisera le système de tirage au sort tel qu’il est
+          implémenté par le système xTDS.
+        </p>
+        <p class="mx-auto w-3/4 text-justify">
+          Le système de tirage au sort a pour objectif de réduire le stress
+          pendant la période d’inscription tout en garantissant un équilibre
+          entre meneurs et suiveurs. De plus, il garantit à toute équipe
+          inscrite d’avoir la possibilité de se représenter lors de l’ETDS.
+        </p>
+
+        <p class="mx-auto w-3/4 text-justify">
+          Pour plus d’informations sur la procédure d’inscription, voir la
+          <a href="/registration-policy">politique d’inscription</a>.
+        </p>
+      </section>
+
+      <section class="w-full flex flex-wrap">
+        <div class="w-1/2">
+          <h2>Conditions</h2>
+          <p class="mb-0!">
+            Afin de sélectionner équitablement les participants à l’ETDS, un
+            système de tirage au sort est utilisé. Ce système sélectionne de
+            manière aléatoire des personnes depuis la liste d’inscription pour
+            la participation. Pour donner à tous les inscrits une chance
+            équitable de participer, le système tient compte des conditions
+            suivantes.
+          </p>
+          <ul>
+            <li>Les couples inscrits ensemble ne seront pas séparés.</li>
+            <li>
+              Les capitaines d’équipe sont garantis de participer. Leur nombre
+              dépend de la taille de l’équipe.
+            </li>
+            <li>
+              Les participants sont sélectionnés de manière à maintenir l’équilibre
+              meneur/suiveur dans toutes les classes.
+            </li>
+            <li>
+              Les inscrits n’ayant jamais participé à l’ETDS bénéficient d’une
+              légère préférence dans le tirage.
+            </li>
+            <li>
+              Les inscrits qui s’étaient enregistrés à l’ETDS précédent mais n’ont
+              pas été tirés au sort bénéficient d’une très légère préférence. Pour
+              cela, il est essentiel d’utiliser la même adresse e‑mail.
+            </li>
+          </ul>
+
+          <h2>Tours</h2>
+          <p class="mb-0!">
+            Un tour principal de tirage au sort sera organisé, sélectionnant la
+            majorité des participants.
+          </p>
+          <ul>
+            <li>24 août&nbsp;: ±650 participants</li>
+          </ul>
+          <p>
+            Des sélections supplémentaires seront effectuées en fonction des
+            annulations et pour équilibrer les nombres de meneurs et de suiveurs.
+          </p>
+        </div>
+        <div class="w-1/2">
+          <h2>Partenaires</h2>
+          <p>
+            Si une personne inscrite avec un partenaire est tirée au sort, ce
+            partenaire sera également sélectionné automatiquement. Ainsi, un
+            couple de danse inscrit ensemble sera toujours sélectionné ensemble.
+          </p>
+
+          <p>
+            Si une personne inscrite sans partenaire est tirée au sort, le
+            système sélectionnera une autre personne inscrite sans partenaire.
+            Cette personne supplémentaire sera choisie en fonction des besoins
+            pour maintenir un bon équilibre meneur/suiveur. Cela permet au plus
+            grand nombre de participants possible de trouver un partenaire lors
+            du Blind Dating.
+          </p>
+
+          <h2>Procédure de sélection</h2>
+          <p class="mb-0!">
+            Au moins 90&nbsp;% des participants seront sélectionnés au moyen du
+            système de tirage décrit ci‑dessus. Les places restantes sont
+            réservées à des besoins spécifiques, notamment&nbsp;:
+          </p>
+          <ul>
+            <li>l’organisation,</li>
+            <li>le bureau du tournoi,</li>
+            <li>les super‑bénévoles,</li>
+            <li>les bénévoles de premiers secours,</li>
+            <li>d’autres fonctions bénévoles spécifiques,</li>
+            <li>l’équilibrage de dernière minute de la répartition meneur/suiveur.</li>
+          </ul>
+          <p>Ces places sont attribuées par l’organisation.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</Layout>
+
+<style>
+  section h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  section {
+    font-size: 0.91rem;
+  }
+  section div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  section ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  section ul li {
+    color: inherit;
+    font-size: 0.97rem;
+  }
+  section ul li::marker {
+    color: var(--color-secondary);
+  }
+  section ul ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1.5rem;
+  }
+  section ul li strong {
+    color: var(--color-primary);
+  }
+
+  section p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+  }
+</style>

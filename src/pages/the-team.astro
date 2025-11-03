@@ -1,0 +1,128 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
+
+    <main>
+      <Hero title="L'&Eacute;quipe France" />
+
+      <section>
+        <div class="mx-auto w-3/4">
+          <h2>L'&Eacute;quipe France, c'est quoi ?</h2>
+          <p>
+            &Agrave; la diff&eacute;rence des autres pays participants
+            (Allemagne, Suisse, Pays-Bas, Royaume Uni, etc.), o&ugrave; les
+            danseurs font parti d'une association li&eacute;e &agrave; une
+            universit&eacute;, l'&Eacute;quipe France est ouverte &agrave; tous
+            les danseurs &eacute;tudiants en France.
+          </p>
+          <p>
+            Que vous soyez de Paris, Lyon, Rennes, Marseille ou toute autre
+            ville, que vous dansiez en club universitaire ou en club associatif,
+            vous pouvez faire partie de l'&Eacute;quipe France ETDS !
+          </p>
+        </div>
+      </section>
+      <section class="flex">
+        <div class="w-1/2 pr-2!">
+          <img src="/capitaine.jpg" />
+        </div>
+        <div class="w-1/2 pl-2!">
+          <h2 class="mt-0!">A propos du capitaine de l'&eacute;quipe</h2>
+          <p>
+            A moins que tu ne sois d&eacute;j&agrave; venu &agrave; Rotterdam
+            pour l'Holland Masters, tu ne me connais pas encore. Je m'appelle <a
+              href="https://benoit.viguier.nl">Beno&icirc;t</a
+            >, je suis expert m&eacute;tier en informatique et je danse (le
+            standard) aux Pays-Bas depuis plus de 9 ans. Je participe
+            g&eacute;neralement &agrave; l'ETDS sous la bani&egrave;re de <a
+              href="https://sdvndancefever.nl/">SDVN Dance Fever</a
+            >
+            Nijmegen (Nim&egrave;gue) et j'ai fait parti de l'&eacute;quipe nationale
+            de danse en formation <a href="https://dsvswayoflife.nl/"
+              >DSV Sway of Life</a
+            > des Pays-Bas de 2018 &agrave; 2024 (videos de <a
+              href="https://www.youtube.com/watch?v=B2_9aOPimNo">2022</a
+            > &amp; <a href="https://www.youtube.com/watch?v=eBDkpNnZh94"
+              >2024</a
+            >).
+          </p>
+          <p>
+            Vu que j'ai appri la danse aux Pays-Bas, j'ai &eacute;galement une
+            bonne compr&eacute;hension de la fa&ccedil;on dont le tournoi et les
+            &eacute;quipes nationales universitaires fonctionnent dans les autres
+            pays. C'est pour cette raison que je souhaite cr&eacute;er
+            l'&Eacute;quipe France afin de permettre &agrave; plus de danseurs
+            fran&ccedil;ais de participer &agrave; cet &eacute;v&egrave;nement.
+          </p>
+          <p>
+            Donc n'h&eacute;site pas &agrave; me contacter sur insta <a href="https://www.instagram.com/phd.dance/">@phd.dance</a> ou de m'envoyer un mail 
+            &agrave; <a href="mailto:beviguier@gmail.com">beviguier@gmail.com</a> si tu as des questions ou souhaites rejoindre l'&Eacute;quipe France !<br >
+            (Et oui, c'est moi qui ai fait ce site web aussi 😉)
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+</Layout>
+
+<style>
+  section h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  section {
+    font-size: 0.91rem;
+    margin-bottom: 4rem;
+  }
+  section div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  section ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  section ul li {
+    color: inherit;
+    font-size: 0.97rem;
+  }
+  section ul li::marker {
+    color: var(--color-secondary);
+  }
+  section ul ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1.5rem;
+  }
+  section ul li strong {
+    color: var(--color-primary);
+  }
+
+  section p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+</style>
