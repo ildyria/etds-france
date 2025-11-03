@@ -57,7 +57,7 @@ import AccordionItem from "../components/AccordionItem.astro";
           </AccordionItem>
           <AccordionItem header="Que dois-je apporter ?">
             Nous avons une liste de choses à emporter ! Vous pouvez la trouver
-            ici, elle est même interactive !
+            <a href="/packing-list">ici</a>, elle est même interactive !
           </AccordionItem>
           <AccordionItem header="Comment venir ?">
             Il est courant que les équipes décident ensemble du mode de
@@ -242,15 +242,15 @@ import AccordionItem from "../components/AccordionItem.astro";
             pouvez bouger librement. Les chaussures de danse sont préférées, mais
             des chaussures habillées sont aussi acceptées. Évitez les baskets.
             <br /><br />
-            Pour plus de détails, consultez toutes les restrictions sur la page du
-            dress code !
+            Pour plus de détails, consultez toutes les restrictions sur la <a href="/dress-code">page du
+            code vestimentaire</a> !
           </AccordionItem>
           <AccordionItem header="C'est quoi cette histoire de classes ?">
             En général, lors d'un ETDS, il existe différentes classes. Selon
             votre niveau, vous serez assigné à une classe lors du tour de
             qualification, puis vous concourrez dans cette classe lors des
-            finales suivantes. Pour plus d'informations, consultez la page des
-            classes.
+            finales suivantes. Pour plus d'informations, consultez la <a href="/classes">page des
+            classes</a>.
           </AccordionItem>
           <AccordionItem header="Comment fonctionnent les tours ?">
             Il y aura d'abord deux tours de qualification. Dans ces tours, tous
@@ -264,7 +264,7 @@ import AccordionItem from "../components/AccordionItem.astro";
             <br /><br />
             Ce processus se poursuit entre les tours jusqu'à ce qu'il ne reste plus
             que 6 couples en finale. Notez que dans les derniers tours, vous devrez
-            peut-être danser plus de danses.
+            peut-être danser <a href="/dances">plus de danses</a>.
             <br /><br />
             Tous les couples qui étaient en demi-finale sont appelés à l'entrée de
             la piste au début de la finale. Puis, un par un, les finalistes sont
@@ -276,7 +276,7 @@ import AccordionItem from "../components/AccordionItem.astro";
             Les danses que vous devez danser varient selon la classe dans
             laquelle vous êtes placé. De plus, cela peut signifier que vous
             aurez des danses supplémentaires dans les tours suivants. Vous
-            pouvez trouver ces informations ici.
+            pouvez trouver ces informations <a href="/dances">ici</a>.
           </AccordionItem>
           <AccordionItem header="Et si je n'ai pas de partenaire ?">
             Pas de problème ! Le vendredi soir, tout l'événement tourne autour
@@ -339,17 +339,6 @@ import AccordionItem from "../components/AccordionItem.astro";
 </Layout>
 
 <style>
-  .container {
-    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
-      Arial, sans-serif;
-    min-height: 100vh;
-  }
-
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
 </style>
 
 <script>
@@ -378,3 +367,9 @@ import AccordionItem from "../components/AccordionItem.astro";
     });
   });
 </script>
+<style>
+  a {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+</style>

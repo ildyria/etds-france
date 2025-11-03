@@ -5,6 +5,7 @@
   --color-secondary: #ef4135;
   --color-background: #f9f9f9;
   --color-text: #333333;
+  --color-muted: #666666;
 }
 
 a {
@@ -15,4 +16,16 @@ a:hover,
 a:focus {
   color: var(--color-secondary);
   text-decoration: underline;
+}
+
+.container {
+  font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+    Arial, sans-serif;
+  min-height: 100vh;
+}
+
+main {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 80rem;
 }

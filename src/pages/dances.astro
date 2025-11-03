@@ -1,33 +1,141 @@
-Dances
-The dances that you have to dance differ per class in which you are placed. Furthermore, this may mean you get additional dances in later rounds. You can find the information regarding classes on the classes page.
+---
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+---
 
-Breitensport Standard
-Breitensport qualification: SW, TG, QS
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
 
-Finals:
+    <main class="max-w-4xl!">
+      <Hero title="Les danses" />
 
-Enthusiasts + Amateurs: SW, TG, QS
-Professionals + Masters: also VW in later rounds
-Champions + Legends: also VW, SF in later rounds
-Breitensport Latin
-Breitensport qualification: CC, RU, JI
+      <section>
+        <p class="mx-auto w-3/4 text-justify">
+          Les danses que vous devez effectuer diffèrent selon la catégorie dans
+          laquelle vous êtes placé. De plus, cela peut impliquer des danses
+          supplémentaires dans les tours suivants. Vous trouverez les informations
+          concernant les classes sur la <a href="classes">page des classes</a>.
+        </p>
+      </section>
 
-Finals:
+      <section class="w-full flex flex-wrap">
+        <div class="w-1/2">
+          <h2>Standard Breitensport</h2>
+          <p>
+            Qualification Breitensport : SW, TG, QS<br />
+            <br />
+            Finales :<br />
+            <span class="text-muted">Enthusiasts + Amateurs : SW, TG, QS</span
+            ><br />
+            <span class="text-muted"
+              >Professionals + Masters : VW en plus dans les derniers tours</span
+            ><br />
+            <span class="text-muted"
+              >Champions + Legends : VW, SF en plus dans les derniers tours</span
+            ><br />
+          </p>
+        </div>
+        <div class="w-1/2">
+          <h2>Latin Breitensport</h2>
+          <p>
+            Qualification Breitensport : CC, RU, JI<br />
+            <br />
+            Finales :<br />
+            <span class="text-muted">Enthusiasts + Amateurs : CC, RU, JI</span
+            ><br />
+            <span class="text-muted"
+              >Professionals + Masters : SA en plus dans les derniers tours</span
+            ><br />
+            <span class="text-muted"
+              >Champions + Legends : SA, PD en plus dans les derniers tours</span
+            ><br />
+          </p>
+        </div>
 
-Enthusiasts + Amateurs: CC, RU, JI
-Professionals + Masters: also SA in later rounds
-Champions + Legends: also SA, PD in later rounds
-ClOpen
-Be prepared to dance any of the five dances at any point of the competition.
+        <section class="w-full">
+          <div class="mx-auto w-3/4 text-justify">
+            <h2>ClOpen (Closed-Open)</h2>
+            Soyez prêt à danser n'importe laquelle des cinq danses à tout moment de la compétition.
+          </div>
+        </section>
 
-Legend
-Slow Waltz - SW
-Tango - TG
-Viennese Waltz - VW
-Slow Foxtrot - SF
-Quickstep - QS
-SA - Samba
-CC - Cha Cha Cha
-RU - Rumba
-PD - Paso Doble
-JI - Jive
+        <section class="w-full">
+          <div class="mx-auto w-1/2">
+            <h2 class="text-center!">Légende</h2>
+            <div class="p-0! flex w-full">
+              <p class="text-right! w-full pr-2">
+                Valse Lente - <strong>SW</strong><br />
+                Tango - <strong>TG</strong><br />
+                Valse Viennoise - <strong>VW</strong><br />
+                Slow Fox - <strong>SF</strong><br />
+                Quickstep - <strong>QS</strong><br />
+              </p>
+              <p class="text-left w-full pl-2">
+                <strong>SA</strong> - Samba <br />
+                <strong>CC</strong> - Cha Cha Cha <br />
+                <strong>RU</strong> - Rumba <br />
+                <strong>PD</strong> - Paso Doble <br />
+                <strong>JI</strong> - Jive<br />
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+</Layout>
+<style>
+  section h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  section {
+    font-size: 0.91rem;
+  }
+  section div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  section ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  section ul li {
+    color: var(--color-muted);
+    font-size: 0.97rem;
+    text-align: left;
+  }
+  section ul li::marker {
+    color: var(--color-secondary);
+  }
+  section ul ul {
+    margin-bottom: 0.5em;
+    padding-left: 1.5rem;
+  }
+  section ul li strong {
+    color: var(--color-primary);
+  }
+
+  section p {
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+</style>

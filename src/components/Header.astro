@@ -20,9 +20,10 @@
         <div class="nav-submenu-list">
           <!-- <a href="https://etds2025aachen.vercel.app/#/weekend" class="nav-link">L'application</a> -->
           <!-- <a href="https://etds2025aachen.vercel.app/#/info-merchandise" class="nav-link">Les goodies</a> -->
-          <a href="/packing-list" class="nav-link">Liste de choses à emporter</a>
+          <a href="/packing-list" class="nav-link">Liste de bagages</a>
           <a href="/code-of-conduct" class="nav-link">Code de conduite</a>
           <a href="/info-visitors" class="nav-link">Info aux visiteurs</a>
+          <a href="/historique" class="nav-link">Pr&eacute;c&eacute;dentes &Eacute;ditions</a>
         </div>
 
       </div>
@@ -41,6 +42,19 @@
           >
         </div>
       </div>
+      <div class="nav-submenu">
+        <button
+          class="nav-link nav-submenu-toggle"
+          aria-haspopup="true"
+          aria-expanded="false">Tournoi ▼</button
+        >
+        <div class="nav-submenu-list">
+          <a href="/classes" class="nav-link">Les classes</a>
+          <a href="/dances" class="nav-link">Les dances</a>
+          <a href="/blind-dating" class="nav-link">Le Blind Dating</a>
+          <a href="/dress-code" class="nav-link">Le Code Vestimentaire</a>
+        </div>
+      </div>
       <!-- <a href="#about" class="nav-link">À propos</a> -->
       <a href="/the-team" class="nav-link">L'&eacute;quipe</a>
     </nav>
@@ -51,18 +65,34 @@
   </div>
 
   <nav class="mobile-nav">
-    <a href="/" class="mobile-nav-link">Accueil</a>
     <div class="mobile-nav-submenu">
-      <span class="mobile-nav-link" style="font-weight:700;">Aide ▼</span>
+      <button class="mobile-nav-link mobile-nav-submenu-toggle">A propos ▼</button>
+      <div class="mobile-nav-submenu-list">
+        <a href="/packing-list" class="mobile-nav-link">Liste de bagages</a>
+        <a href="/code-of-conduct" class="mobile-nav-link">Code de conduite</a>
+        <a href="/info-visitors" class="mobile-nav-link">Info aux visiteurs</a>
+        <a href="/historique" class="mobile-nav-link">Pr&eacute;c&eacute;dentes &Eacute;ditions</a>
+      </div>
+    </div>
+    <div class="mobile-nav-submenu">
+      <button class="mobile-nav-link mobile-nav-submenu-toggle">Aide ▼</button>
       <div class="mobile-nav-submenu-list">
         <a href="/help-newbie" class="mobile-nav-link">Je suis Débutant</a>
         <a href="/help-participant" class="mobile-nav-link">Je suis Participant</a>
         <a href="/help-adjudicator" class="mobile-nav-link">Je suis adjudicateur</a>
-        <a href="/help-tc" class="mobile-nav-link">Je suis capitaine d'équipe</a>
+        <a href="/help-tc" class="mobile-nav-link">Je suis capitaine d'&eacute;quipe</a>
       </div>
     </div>
-    <a href="#about" class="mobile-nav-link">À propos</a>
-    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <div class="mobile-nav-submenu">
+      <button class="mobile-nav-link mobile-nav-submenu-toggle">Tournoi ▼</button>
+      <div class="mobile-nav-submenu-list">
+        <a href="/classes" class="mobile-nav-link">Les classes</a>
+        <a href="/dances" class="mobile-nav-link">Les dances</a>
+        <a href="/blind-dating" class="mobile-nav-link">Le Blind Dating</a>
+        <a href="/dress-code" class="mobile-nav-link">Le Code Vestimentaire</a>
+      </div>
+    </div>
+    <a href="/the-team" class="mobile-nav-link">L'&eacute;quipe</a>
   </nav>
   <div class="site-banner">
     SITE EN CONSTRUCTION
@@ -292,6 +322,8 @@
     padding: 1rem 2rem;
     background: rgba(255, 255, 255, 0.98);
     border-top: 1px solid rgba(0, 85, 164, 0.1);
+    gap: 0.5rem;
+    width: 100%;
   }
 
   .mobile-nav.active {
@@ -306,7 +338,40 @@
     padding: 1rem;
     border-radius: 8px;
     transition: all 0.3s;
-    text-align: center;
+    text-align: left;
+  }
+
+  .mobile-nav-submenu {
+    width: 100%;
+  }
+
+  .mobile-nav-submenu-toggle {
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .mobile-nav-submenu-list {
+    display: none;
+    padding-left: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile-nav-submenu.open .mobile-nav-submenu-list {
+    display: flex;
+  }
+
+  .mobile-nav-submenu-list .mobile-nav-link {
+    width: 100%;
+    display: block;
+    padding: 0.75rem 1rem;
+    text-align: left;
   }
 
   .mobile-nav-link:hover {
@@ -332,30 +397,57 @@
 <script>
   // Dropdown submenu reactivity
   document.addEventListener("DOMContentLoaded", () => {
-    const submenu = document.querySelector(".nav-submenu");
-    const toggle = submenu?.querySelector(".nav-submenu-toggle");
-    const submenuList = submenu?.querySelector(".nav-submenu-list");
+    // Desktop submenus
+    document.querySelectorAll(".nav-submenu").forEach(submenu => {
+      const toggle = submenu.querySelector(".nav-submenu-toggle");
+      if (toggle) {
+        toggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          submenu.classList.toggle("open");
+          toggle.setAttribute(
+            "aria-expanded",
+            submenu.classList.contains("open") ? "true" : "false"
+          );
+        });
+      }
+    });
 
-    // Desktop: show on hover (handled by CSS)
-    // Mobile: toggle on click
-    if (toggle && submenu) {
-      toggle.addEventListener("click", (e) => {
-        e.preventDefault();
-        submenu.classList.toggle("open");
-        // Update aria-expanded
-        toggle.setAttribute(
-          "aria-expanded",
-          submenu.classList.contains("open") ? "true" : "false"
-        );
-      });
-      // Close submenu when clicking outside (mobile)
-      document.addEventListener("click", (e) => {
-        if (!submenu.contains(e.target)) {
+    // Mobile submenus
+    document.querySelectorAll(".mobile-nav-submenu").forEach(submenu => {
+      const toggle = submenu.querySelector(".mobile-nav-submenu-toggle");
+      if (toggle) {
+        toggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          submenu.classList.toggle("open");
+          const isOpen = submenu.classList.contains("open");
+          toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          // Close other submenus
+          document.querySelectorAll(".mobile-nav-submenu").forEach(other => {
+            if (other !== submenu) {
+              other.classList.remove("open");
+              const otherToggle = other.querySelector(".mobile-nav-submenu-toggle");
+              if (otherToggle) {
+                otherToggle.setAttribute("aria-expanded", "false");
+              }
+            }
+          });
+        });
+      }
+    });
+
+    // Close submenus when clicking outside
+    document.addEventListener("click", (e) => {
+      const target = e.target as Node;
+      document.querySelectorAll(".nav-submenu, .mobile-nav-submenu").forEach(submenu => {
+        if (!submenu.contains(target)) {
           submenu.classList.remove("open");
-          toggle.setAttribute("aria-expanded", "false");
+          const toggle = submenu.querySelector(".nav-submenu-toggle, .mobile-nav-submenu-toggle");
+          if (toggle) {
+            toggle.setAttribute("aria-expanded", "false");
+          }
         }
       });
-    }
+    });
 
     // Mobile menu toggle
     const menuButton = document.querySelector(".mobile-menu-button");
@@ -363,10 +455,20 @@
     if (menuButton && mobileNav) {
       menuButton.addEventListener("click", () => {
         mobileNav.classList.toggle("active");
+        // Close all submenus when closing mobile menu
+        if (!mobileNav.classList.contains("active")) {
+          document.querySelectorAll(".mobile-nav-submenu").forEach(submenu => {
+            submenu.classList.remove("open");
+            const toggle = submenu.querySelector(".mobile-nav-submenu-toggle");
+            if (toggle) {
+              toggle.setAttribute("aria-expanded", "false");
+            }
+          });
+        }
       });
-      // Close mobile menu when clicking a link
-      const mobileLinks = document.querySelectorAll(".mobile-nav-link");
-      mobileLinks.forEach((link) => {
+
+      // Close mobile menu when clicking a non-submenu link
+      document.querySelectorAll(".mobile-nav-link:not(.mobile-nav-submenu-toggle)").forEach((link) => {
         link.addEventListener("click", () => {
           mobileNav.classList.remove("active");
         });

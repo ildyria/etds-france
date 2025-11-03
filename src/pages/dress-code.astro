@@ -1,41 +1,155 @@
-Dress Code
-Following are the rules regarding the dress code as used during the ETDS competitions. As with all rules, the ETDS committee reserves the right to diverge from the rules stated in the document to rule in individual cases if conflict should arise. If you are unsure about one of your outfits, pack „safe“ alternatives.
+---
+import Hero from "../components/Hero.astro";
+import IntroSection from "../components/IntroSection.astro";
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+---
 
-Clothing
-It is not allowed to dance in competitive dance clothes
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
 
-(e.g. tailcoat, dance suit, latin shirt for competitions or tailored dance dress)
+    <main class="max-w-6xl!">
+      <Hero title="Code Vestimentaire" />
 
-No excessive glitter, feathers, rhinestones allowed
+      <IntroSection>
+        <p>
+          Voici les règles concernant le code vestimentaire en vigueur lors des
+          compétitions ETDS. Comme pour toutes les règles, le comité ETDS se
+          réserve le droit de s'écarter des règles énoncées dans ce document
+          pour statuer sur des cas individuels en cas de conflit. Si vous avez
+          des doutes sur l'une de vos tenues, prévoyez des alternatives « sûres
+          ».
+        </p>
+        <section class="w-full flex flex-wrap">
+          <div class="w-1/2">
+            <h2>Vêtements</h2>
+            <p>
+              Il n'est pas permis de danser en tenues de compétition.<br />
+              <span class="text-muted text-sm">
+                (par exemple, queue-de-pie, costume de danse, chemise latine de
+                compétition ou robe de danse sur mesure)
+              </span>
+            </p>
 
-Not on clothing or hair
+            <p>
+              Les paillettes, plumes et strass excessifs ne sont pas autorisés<br
+              />
+              <span class="text-muted"
+                >Ni sur les vêtements, ni dans les cheveux</span
+              >
+            </p>
 
-No rhinestone accessories used in competitive dancing are allowed
+            <p>
+              Les accessoires à strass utilisés en danse de compétition ne sont
+              pas autorisés
+            </p>
 
+            <p class="mb-0!">
+              Les vêtements doivent <strong
+                >couvrir les fesses et la poitrine</strong
+              >
+              , y compris pendant la danse
+            </p>
+            <ul>
+              <li>non transparents, pas de couleur chair</li>
+              <li>applicable à tous les danseurs, quel que soit leur genre</li>
+            </ul>
+            <p class="mb-0!">
+              Les tenues de compétition ne sont pas autorisées. Les exceptions
+              sont :
+            </p>
+            <ul>
+              <li>Les gilets</li>
+              <li>Les pantalons de danse latine et standard</li>
+              <li>Les chemises à boutons conçues pour la danse</li>
+            </ul>
+          </div>
+          <div class="w-1/2">
+            <h2>Chaussures</h2>
+            <p>Les chaussures de danse sont obligatoires</p>
 
-Clothing must cover buttocks and chest-area, also whilst dancing
+            <p>
+              Les chaussures d'extérieur et les chaussures à semelles en
+              caoutchouc sont strictement interdites sur la piste de danse
+            </p>
 
-non-see-through, not skin-colored
-relevant for all dancers, regardless of gender
+            <p>Les protège-talons sont obligatoires</p>
 
-Competitive clothing is not allowed. Exceptions are:
+            <p>
+              L'utilisation de paraffine ou d'huile sous vos chaussures est
+              interdite
+              <span class="text-muted"
+                >Nous fournirons des planches à gratter et des serviettes
+                humides en cas de sol glissant. Aucun autre outil n'est
+                autorisé.</span
+              >
+            </p>
 
-Waistcoats (vests)
-Latin and Ballroom trousers
-Button-down shirts made for dancing
+            <p class="text-primary">
+              Si vous choisissez d'ignorer les règles ci-dessus, vous pourrez
+              être tenu responsable des d&eacute;g&acirc;ts causés.
+            </p>
+          </div>
+        </section>
+      </IntroSection>
+    </main>
+  </div>
+</Layout>
+<style>
+  section h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  section {
+    font-size: 0.91rem;
+  }
+  section div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
 
-Shoes
-Dance shoes are obligatory
+  section ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  section ul li {
+    color: var(--color-muted);
+    font-size: 0.97rem;
+    text-align: left;
+  }
+  section ul li::marker {
+    color: var(--color-secondary);
+  }
+  section ul ul {
+    margin-bottom: 0.5em;
+    padding-left: 1.5rem;
+  }
+  section ul li strong {
+    color: var(--color-primary);
+  }
 
+  section p {
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
 
-Outdoor shoes and shoes with rubber soles are strictly forbidden on the dance floor
-
-
-Heel protectors must be used
-
-
-Use of paraffin or oil under your shoes is forbidden
-
-We will provide scratching boards and wet towels in case the floor is slippery. No other tools are allowed.
-
-If you choose to ignore the above rules, you may be held accountable for any damage you have caused
+  section p strong {
+    color: var(--color-secondary);
+  }
+</style>

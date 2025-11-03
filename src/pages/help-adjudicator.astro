@@ -19,7 +19,9 @@ import AccordionItem from "../components/AccordionItem.astro";
           Donc... Vous envisagez d'être juge à l'ETDS, ou vous avez déjà été sollicité ? Cette page est faite pour vous.<br /><br />
           Si quelque chose n'est pas clair, veuillez contacter votre capitaine d'équipe ou <a href="mailto:FIXME">nous</a>.
         </p>
+      </IntroSection>
 
+      <section>
         <AccordionContainer>
           <AccordionItem header="Comment s'inscrire comme juge ?">
             Les juges participants peuvent s'inscrire via les capitaines d'équipe dans le système habituel.<br /><br />
@@ -53,24 +55,10 @@ import AccordionItem from "../components/AccordionItem.astro";
             Vous pouvez nous blâmer, vous blâmer vous-même 😉, ou ne blâmer personne. Bien que nous nous efforcions d'avoir un panel de juges juste et compétent, nous tenons aussi à préserver l'esprit de l'ETDS. À ce titre, nous n'avons pas à expliquer ou justifier les choix concernant les juges sélectionnés.
           </AccordionItem>
         </AccordionContainer>
-      </IntroSection>
+      </sectiom>
     </main>
   </div>
 </Layout>
-
-<style>
-  .container {
-    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
-      Arial, sans-serif;
-    min-height: 100vh;
-  }
-
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-</style>
 
 <script>
   // Accordion functionality
@@ -98,3 +86,9 @@ import AccordionItem from "../components/AccordionItem.astro";
     });
   });
 </script>
+<style>
+  a {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+</style>

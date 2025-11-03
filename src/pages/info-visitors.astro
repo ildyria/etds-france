@@ -1,33 +1,148 @@
-Visitor information
-Limited number of daytime and evening visitor tickets available
+---
+import Hero from "../components/Hero.astro";
+import IntroSection from "../components/IntroSection.astro";
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+---
 
-Information
-Visitors are welcomed at the ETDS at any moment. This means you can have your family come and watch for the competition. You can also have someone from your association join for one of the parties to give them a taste of the ETDS!
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
 
-There are two types of visitors:
-Daytime visitors & Evening visitors.
+    <main class="max-w-4xl!">
+      <Hero title="Informations aux Visiteurs" />
 
-Because of space limitations we have a limited number of daytime visitor (spectator) tickets and evening visitor tickets available. If you or some of your friends or relatives are interested in coming to watch the tournament, please fill out the registration form.
+      <IntroSection>
+        <h4>Nombre limité de billets visiteurs disponibles pour la journée et la soirée</h4>
+        <section class="w-full flex flex-wrap">
+          <div class="w-1/2">
+            <h2>Informations</h2>
+            <p>
+              Les visiteurs sont les bienvenus à l'ETDS à tout moment. Cela signifie que
+              votre famille peut venir assister à la compétition. Vous pouvez
+              également inviter quelqu'un de votre association à l'une des
+              soirées pour leur donner un aperçu de l'ETDS !<br />
+              <br />
+              Il existe deux types de visiteurs :<br />
+              Visiteurs de jour & Visiteurs de soirée.<br />
+              <br />
+              En raison des limitations d'espace, nous disposons d'un nombre limité de billets
+              pour les visiteurs de jour (spectateurs) et de soirée. Si vous ou
+              vos amis et proches souhaitez venir assister au tournoi, veuillez
+              remplir le formulaire d'inscription.<br />
+              <br />
+              <strong
+                >Notez qu'il s'agit d'un événement sans alcool et que fumer est
+                interdit sur le site.<br />
+                De plus, le <a href="/code-of-conduct">Code de Conduite</a> doit
+                être respecté.</strong
+              >
+            </p>
+          </div>
+          <div class="w-1/2">
+            <h2>Visiteurs de Jour</h2>
+            <p>
+              Les visiteurs de jour sont les bienvenus pendant le tournoi pour venir
+              encourager leurs amis et leur famille. La journée s'étend de 8h30 jusqu'à
+              la fin du tournoi, généralement vers 19h30.
+            </p>
+            <h2>Visiteurs de Soirée</h2>
+            <p>
+              Les visiteurs de soirée sont les bienvenus pendant les soirées pour
+              danser et assister à tous les spectacles. Vous pouvez danser du début
+              de la soirée jusqu'au petit matin.<br />
+              <strong>Pour les horaires exacts par jour, consultez le programme.</strong>
+            </p>
+            <h2>Nourriture et Boissons</h2>
+            <p>
+              La nourriture et les boissons ne sont pas incluses dans le prix d'entrée.
+              Cependant, vous pouvez acheter à manger et à boire dans les restaurants
+              et commerces à proximité dans la ville.<br />
+              <br />
+              Les boissons peuvent être achetées au bar. <strong
+                >Notez qu'il s'agit d'un tournoi sans espèces, les paiements en
+                liquide ne sont donc pas acceptés.</strong
+              ><br />
+              <br />
+              Il est strictement interdit de commander de la nourriture à livrer sur le site.
+            </p>
+          </div>
+          <div class="w-1/2">
+            <h2>Inscription et Paiement</h2>
+            <p>
+              <strong
+                >Veuillez vous inscrire via le formulaire visiteur si vous souhaitez
+                venir regarder le tournoi ou danser toute la nuit.</strong
+              ><br />
+              Vous recevrez un email avec les informations de paiement dans les quatre
+              jours suivant votre inscription pour confirmer vos places.<br />
+              <br />
+              Entrée pour les visiteurs de jour : 10€.<br />
+              Entrée pour les visiteurs de soirée : 10€.<br />
+              Entrée jour & soirée : 15€.<br />
+              Entrée pour tout le week-end : 40€.<br />
+              <br />
+              Ceci n'inclut pas l'accès au buffet du déjeuner. Les boissons ne sont pas
+              incluses et peuvent être achetées au bar. L'email de confirmation
+              contiendra les détails du paiement.
+            </p>
+          </div>
+        </section>
+      </IntroSection>
+    </main>
+  </div>
+  <style>
+    section h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--color-primary);
+      margin-top: 1.8rem;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+    section {
+      font-size: 0.91rem;
+    }
+    section div {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    section h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-top: 2.2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
 
-Keep in mind this is an alcohol-free event and smoking is prohibited at the location.
-Furthermore, the Code of Conduct must be followed.
-Daytime visitors
-Day visitors are welcome during the tournament to come and cheer on their friends and family. Daytime is from 08:30 until the end of the tournament, usually around 19:30.
-Evening visitors
-Evening visitors are welcome during the evening parties for dancing and watching all shows. You can dance from the start of the evening program until the early morning.
-For the exact times per day, see the program.
-Food, Drinks
-No food or drinks are included in the admission fee. However, food and drinks can be bought at nearby restaurants and shops in the city.
+    section ul {
+      list-style-type: square;
+      padding-left: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    section ul li {
+      color: inherit;
+      font-size: 0.97rem;
+    }
+    section ul li::marker {
+      color: var(--color-secondary);
+    }
+    section ul ul {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      padding-left: 1.5rem;
+    }
+    section ul li strong {
+      color: var(--color-primary);
+    }
 
-Drinks can be purchased at the bar. Keep in mind that this is a cashless tournament, so you can not pay in cash.
-
-Ordering food to the venue is strictly forbidden.
-Signup, Payment
-Please register using the visitor form if you want to come watch the tournament or dance all night.
-You will receive an email with payment informations withing four days after you sign up to confirm your spots.
-
-Entrance for daytime visitors is €10.
-Entrance for evening visitors is €10.
-Entrance for daytime & evening is €15.
-Entrance for entire weekend is €40.
-This does not includes access to the lunch buffet. Drinks are not included and can be purchased at the bar. The confirmation email will contain the payment details.
+    section p {
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+  </style></Layout
+>

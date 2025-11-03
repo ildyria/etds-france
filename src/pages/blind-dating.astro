@@ -1,36 +1,134 @@
-Blind Dating
-Blind dating means that you find a dance partner on site on Friday evening. It is a lot of fun to dance a competition with a partner with whom you do not dance regularly, and who might even be from another country! We highly recommend it, since it is a great way to connect to other teams.
+---
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+---
 
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
 
-In Breitensport, blind dating is voluntary or mandatory depending on your previous competition experience. Please check the classes overview. In ClOpen, there is no blind dating as the partner lottery starts already in the qualification round.
+    <main class="max-w-5xl!">
+      <Hero title="Le Blind Dating" />
 
+      <section class="flex w-full">
+        <div class="w-1/2">
+          <p>
+            Le Blind Dating signifie que vous trouvez un(e) partenaire de danse sur place le vendredi
+            soir. C'est très amusant de participer à une compétition avec un(e) partenaire
+            avec qui vous ne dansez pas régulièrement, et qui pourrait même venir
+            d'un autre pays ! Nous le recommandons vivement, car c'est un excellent moyen de
+            créer des liens avec d'autres équipes.
+          </p>
 
-You can find different partners for Standard and Latin. The main blind dating round will be on Friday for Standard and Latin. There will be a second blind dating round for Latin on Saturday evening.
+          <p>
+            En Breitensport, le blind dating est <strong>volontaire</strong> ou <strong>obligatoire</strong> selon
+            votre expérience préalable en compétition. Veuillez consulter la vue
+            d'ensemble des classes. En ClOpen, il n'y a <strong>pas de blind dating</strong> car le tirage au
+            sort des partenaires commence dès le tour de qualification.
+          </p>
+          <p>
+            Vous pouvez trouver différents partenaires pour le Standard et le Latin. Le
+            principal tour de blind dating aura lieu le vendredi pour le Standard et le Latin. Il
+            y aura un second tour de blind dating pour le Latin le samedi soir.
+          </p>
+          <p>
+            Pour le blind dating, la piste sera divisée afin que vous
+            puissiez vous rendre dans la zone correspondant à votre niveau. Cela facilitera
+            la recherche d'un(e) partenaire de votre niveau. La musique sera jouée par
+            courtes périodes (30 à 60 secondes), après quoi vous changerez
+            de partenaire. Une fois que deux personnes conviennent de vouloir
+            concourir ensemble, vous pouvez vous rendre au bureau d'information pour vous
+            inscrire en tant que couple.
+          </p>
+        </div>
+        <div class="w-1/2">
+          <h2 class="mt-0!">Règles du Blind Dating</h2>
+          <p class="mb-0!">Les règles suivantes s'appliquent :</p>
+          <ul>
+            <li>
+              Les participants volontaires au blind dating n'ont aucune restriction concernant leur partenaire.
+            </li>
+            <li>
+              Les participants obligatoires au blind dating ont les restrictions suivantes :
+              <ul>
+                <li>
+                  Vous ne pouvez pas faire de blind dating avec quelqu'un avec qui, au cours des 3 dernières années,
+                  vous avez concouru (ETDS, NTDS, autre compétition, etc.) ou
+                  vous vous êtes entraîné(e) ensemble.
+                </li>
+                <li>Vous ne pouvez pas faire de blind dating avec quelqu'un de votre propre équipe.</li>
+              </ul>
+            </li>
+            <li>
+              Le blind dating obligatoire ne s'applique qu'à votre rôle habituel de
+              meneur/suiveur. Si vous vous inscrivez pour danser dans le rôle opposé,
+              le blind dating devient volontaire.
+            </li>
+          </ul>
+          <h2>Couleurs du Blind Dating</h2>
+          <p>
+            MENEURS (lead) Standard : BLEU <br />
+            SUIVEURS (follow) Standard : ROUGE<br />
+            MENEURS (lead) Latin : VIOLET<br />
+            SUIVEURS (follow) Latin : JAUNE
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+</Layout>
 
+<style>
+  section h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  section {
+    font-size: 0.91rem;
+  }
+  section div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
 
-For the blind dating, the floor is going to be divided so that you can go to the area corresponding to your level. This will facilitate finding a partner whose level matches yours. Music will play for short periods of time (30 to 60 seconds), after which you will switch to a new partner. Once two people agree that they want to compete together, you can come to the info desk to register as a couple.
+  section ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  section ul li {
+    color: var(--color-muted);
+    font-size: 0.97rem;
+    text-align: left;
+  }
+  section ul li::marker {
+    color: var(--color-secondary);
+  }
+  section ul ul {
+    margin-bottom: 0.5em;
+    padding-left: 1.5rem;
+  }
+  section ul li strong {
+    color: var(--color-primary);
+  }
 
-Blind Dating Rules
-The following rules apply:
-
-Voluntary blind daters have no restrictions on their partner.
-Mandatory blind daters have the following restrictions:
-You cannot blind date someone with whom, in the past 3 years, you have competed (ETDS, NTDS, other competition, etc.) or trained together.
-You cannot blind date someone from your own team.
-Mandatory blind dating only applies to your usual role as lead/follow. If you register to dance in the opposite role then blind dating is voluntary.
-Blind Dating Colors
-Standard LEADS
-
-BLUE
-
-Standard FOLLOWS
-
-RED
-
-Latin LEADS
-
-PURPLE
-
-Latin FOLLOWS
-
-YELLOW
+  section p {
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+</style>

@@ -51,7 +51,7 @@ import AccordionItem from "../components/AccordionItem.astro";
           </AccordionItem>
           <AccordionItem header="Y a-t-il une liste de choses à emporter ?">
             Nous avons une liste de choses à emporter ! Vous pouvez la trouver
-            ici !
+            <a href="/packing-list">ici</a> !
           </AccordionItem>
           <AccordionItem header="Puis-je me garer sur le site ?">
             Oui, il y a des places de parking disponibles, mais elles sont
@@ -137,7 +137,7 @@ import AccordionItem from "../components/AccordionItem.astro";
             Ils sont les bienvenus pour venir vous voir pendant les
             compétitions. Notez cependant que l'inscription est obligatoire et
             que le nombre de billets disponibles est limité. Pour plus
-            d'informations, consultez la page visiteurs.<br /><br />
+            d'informations, consultez la <a href="/info-visitors">page visiteurs</a>.<br /><br />
             Pensez à leur communiquer l'horaire afin qu'ils sachent quand venir.
           </AccordionItem>
         </AccordionContainer>
@@ -151,7 +151,7 @@ import AccordionItem from "../components/AccordionItem.astro";
           </AccordionItem>
           <AccordionItem header="Y a-t-il des restrictions vestimentaires ?">
             Oui ! Elles sont généralement les mêmes que pour tout ETDS.
-            Consultez toutes les restrictions sur la page du dress code !
+            Consultez toutes les restrictions sur la <a href="/dress-code">page du code vestimentaire</a> !
           </AccordionItem>
           <AccordionItem
             header="Quelles sont les classes et dans laquelle dois-je danser ?"
@@ -172,7 +172,7 @@ import AccordionItem from "../components/AccordionItem.astro";
               <li>CloseD</li>
               <li>Open</li>
             </ul>
-            Pour plus d'informations, consultez la page des classes.
+            Pour plus d'informations, consultez la <a href="/classes">page des classes</a>.
           </AccordionItem>
           <AccordionItem header="Y aura-t-il une redance ?">
             Non, il n'y aura pas de redance. Comme il y aura deux tours de
@@ -182,13 +182,13 @@ import AccordionItem from "../components/AccordionItem.astro";
             Les danses que vous devez danser varient selon la classe dans
             laquelle vous êtes placé. De plus, cela peut signifier que vous
             aurez des danses supplémentaires dans les tours suivants. Vous
-            pouvez trouver ces informations ici.
+            pouvez trouver ces informations <a href="/dances">ici</a>.
           </AccordionItem>
           <AccordionItem
             header="Y a-t-il des restrictions pour le blind date ?"
           >
             Pour plus d'informations sur le blind date, consultez la page
-            d'information : Blind Dating
+            d'information : <a href="/blind-dating">Blind Dating</a>.
           </AccordionItem>
         </AccordionContainer>
       </ContentSection>
@@ -197,19 +197,11 @@ import AccordionItem from "../components/AccordionItem.astro";
 </Layout>
 
 <style>
-  .container {
-    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
-      Arial, sans-serif;
-    min-height: 100vh;
-  }
-
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
+  a {
+    color: var(--color-primary);
+    font-weight: bold;
   }
 </style>
-
 <script>
   // Accordion functionality
   document.addEventListener("DOMContentLoaded", () => {
