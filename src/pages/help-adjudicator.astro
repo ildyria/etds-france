@@ -1,0 +1,100 @@
+---
+import Hero from "../components/Hero.astro";
+import IntroSection from "../components/IntroSection.astro";
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+import AccordionContainer from "../components/AccordionContainer.astro";
+import AccordionItem from "../components/AccordionItem.astro";
+---
+
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
+
+    <main>
+      <Hero title="Guide de l'adjudicateur" />
+
+      <IntroSection>
+        <p>
+          Donc... Vous envisagez d'être juge à l'ETDS, ou vous avez déjà été sollicité ? Cette page est faite pour vous.<br /><br />
+          Si quelque chose n'est pas clair, veuillez contacter votre capitaine d'équipe ou <a href="mailto:FIXME">nous</a>.
+        </p>
+
+        <AccordionContainer>
+          <AccordionItem header="Comment s'inscrire comme juge ?">
+            Les juges participants peuvent s'inscrire via les capitaines d'équipe dans le système habituel.<br /><br />
+            Les juges externes sont gérés individuellement. Si vous n'avez pas été contacté et souhaitez juger, n'hésitez pas à nous contacter.<br /><br />
+            Dans les deux cas, l'inscription ne garantit pas d'être choisi comme adjudicateur.<br /><br />
+            <strong>Mise à jour :</strong> vous pouvez désormais vous inscrire vous-même comme adjudicateur potentiel. Vous serez informé en temps utile avant l'ETDS si vous avez été sélectionné.<br />
+            Cliquez sur <a href="https://fall.xtds.dance/adjudicators/register" target="_blank">ce lien</a> pour vous inscrire.
+          </AccordionItem>
+          <AccordionItem header="Quand saurai-je si je dois juger et dans quelle catégorie ?">
+            Les adjudicateurs externes sauront au moins 1 mois à l'avance s'ils sont choisis pour juger. Les adjudicateurs participants seront informés au moins 2 semaines à l'avance.<br /><br />
+            La première planification des juges devrait être publiée ici 2 semaines à l'avance. Bien sûr, des changements dans la planification peuvent être publiés à tout moment.
+          </AccordionItem>
+          <AccordionItem header="Quel système utilisons-nous ?">
+            Nous utilisons un système de jugement numérique intégré au portail xTDS. Cela se fait via une application web simple, accessible depuis n'importe quel smartphone ou tablette. Vous recevrez vos informations de connexion avant le week-end pour pouvoir tester le système.
+          </AccordionItem>
+          <AccordionItem header="Quand dois-je être présent ?">
+            Tous les juges sans expérience préalable du système xTDS sont attendus dans la salle du tournoi à 08h00. Les juges ayant déjà utilisé le système sont attendus à 08h30 pour le briefing initial et les informations sur les dernières mises à jour.<br /><br />
+            Les juges qui ne sont pas à l'heure (ou posent des questions qui auraient été répondues s'ils étaient venus au briefing plus tôt) devront effectuer un gage. Le gage peut inclure 10 pompes au milieu de la piste de danse devant tout le monde, ou toute autre chose jugée appropriée par le comité d'organisation.<br /><br />
+            En d'autres termes, ne soyez pas en retard !
+          </AccordionItem>
+          <AccordionItem header="Que dois-je apporter ?">
+            Bien sûr, il vous faudra votre expertise, votre bonne humeur et votre plus belle tenue. De plus, vous aurez besoin d'un smartphone ou d'une tablette. Si vous ne pouvez pas en apporter ou n'en possédez pas, veuillez nous le signaler et nous en organiserons un pour vous.
+          </AccordionItem>
+          <AccordionItem header="La nourriture et les boissons sont-elles fournies ?">
+            La nourriture et les boissons sont fournies. Assurez-vous d'informer votre capitaine ou nous-même de toute restriction alimentaire.
+          </AccordionItem>
+          <AccordionItem header="Puis-je dormir sur place ?">
+            Si vous êtes un juge externe et souhaitez dormir sur place, veuillez nous contacter pour voir ce que nous pouvons organiser pour vous.
+          </AccordionItem>
+          <AccordionItem header="Je n'ai pas été sélectionné comme juge. Qui dois-je blâmer ?">
+            Vous pouvez nous blâmer, vous blâmer vous-même 😉, ou ne blâmer personne. Bien que nous nous efforcions d'avoir un panel de juges juste et compétent, nous tenons aussi à préserver l'esprit de l'ETDS. À ce titre, nous n'avons pas à expliquer ou justifier les choix concernant les juges sélectionnés.
+          </AccordionItem>
+        </AccordionContainer>
+      </IntroSection>
+    </main>
+  </div>
+</Layout>
+
+<style>
+  .container {
+    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+      Arial, sans-serif;
+    min-height: 100vh;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+</style>
+
+<script>
+  // Accordion functionality
+  document.addEventListener("DOMContentLoaded", () => {
+    const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+    accordionHeaders.forEach((header) => {
+      header.addEventListener("click", () => {
+        const accordionItem = header.parentElement;
+
+        if (!accordionItem) return;
+
+        const isActive = accordionItem.classList.contains("active");
+
+        // Close all accordion items
+        document.querySelectorAll(".accordion-item").forEach((item) => {
+          item.classList.remove("active");
+        });
+
+        // Open clicked item if it wasn't active
+        if (!isActive) {
+          accordionItem.classList.add("active");
+        }
+      });
+    });
+  });
+</script>

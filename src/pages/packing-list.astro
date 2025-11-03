@@ -1,0 +1,592 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
+
+    <main>
+    <Hero title="Liste de choses à emporter" />
+
+      <section class="max-w-4xl mx-auto bg-white rounded-lg shadow p-6">
+        <p class="mb-4 text-gray-700 text-lg text-center">
+          Que faut-il emporter pour le week-end : n'oubliez rien pour ne rien
+          regretter !<br />
+          C'est interactif, vous pouvez cocher chaque case pour marquer ce que vous
+          avez déjà préparé !
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h2 class="font-bold text-primary text-xl mb-2">Vêtements</h2>
+            <ul class="packing-list">
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing1"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing1" class="flex-1 cursor-pointer"
+                  >Tenue pour la compétition Standard</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing2"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing2" class="flex-1 cursor-pointer"
+                  >Chaussures pour le Standard</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing3"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing3" class="flex-1 cursor-pointer"
+                  >Tenue pour la compétition Latine</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing4"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing4" class="flex-1 cursor-pointer"
+                  >Chaussures pour le Latin</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing5"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing5" class="flex-1 cursor-pointer"
+                  >Protège-talons (pour les dames)</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing6"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing6" class="flex-1 cursor-pointer"
+                  >Tenue pour danser le vendredi soir</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing7"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing7" class="flex-1 cursor-pointer"
+                  >Tenue sur le thème</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing8"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing8" class="flex-1 cursor-pointer"
+                  >Tenue de soirée</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing9"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing9" class="flex-1 cursor-pointer"
+                  >Pyjama</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing10"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing10" class="flex-1 cursor-pointer"
+                  >Sous-vêtements, soutien-gorge</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing11"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing11" class="flex-1 cursor-pointer"
+                  >Chaussettes/culottes</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing12"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing12" class="flex-1 cursor-pointer"
+                  >Tenue décontractée pour encourager vos coéquipiers</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing13"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing13" class="flex-1 cursor-pointer"
+                  >Tenue normale si vous voulez sortir en ville</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="clothing14"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="clothing14" class="flex-1 cursor-pointer"
+                  >Chaussons, tongs, mocassins, tout ce qui est confortable</label
+                >
+              </li>
+            </ul>
+
+            <h2 class="font-bold text-primary text-xl mt-6 mb-2">
+              Affaires pour dormir
+            </h2>
+            <ul class="packing-list">
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="sleep1"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="sleep1" class="flex-1 cursor-pointer"
+                  >Matelas gonflable</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="sleep2"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="sleep2" class="flex-1 cursor-pointer">Pompe</label>
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="sleep3"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="sleep3" class="flex-1 cursor-pointer"
+                  >Sac de couchage ou couverture</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="sleep4"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="sleep4" class="flex-1 cursor-pointer"
+                  >Oreiller</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="sleep5"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="sleep5" class="flex-1 cursor-pointer"
+                  >Bouchons d'oreilles</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="sleep6"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="sleep6" class="flex-1 cursor-pointer"
+                  >Masque de nuit</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="font-bold text-primary text-xl mb-2">
+              Affaires de toilette
+            </h2>
+            <ul class="packing-list">
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries1"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries1" class="flex-1 cursor-pointer"
+                  >Serviette(s)</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries2"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries2" class="flex-1 cursor-pointer"
+                  >Gel douche, shampoing, après-shampoing</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries3"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries3" class="flex-1 cursor-pointer"
+                  >Déodorant</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries4"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries4" class="flex-1 cursor-pointer"
+                  >Brosse à dents</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries5"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries5" class="flex-1 cursor-pointer"
+                  >Dentifrice</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries6"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries6" class="flex-1 cursor-pointer"
+                  >Lunettes/lentilles (n'oubliez pas le liquide)</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries7"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries7" class="flex-1 cursor-pointer"
+                  >Brosse à cheveux</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries8"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries8" class="flex-1 cursor-pointer"
+                  >Gel/laque/autres produits pour coiffer vos cheveux</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries9"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries9" class="flex-1 cursor-pointer"
+                  >Maquillage</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries10"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries10" class="flex-1 cursor-pointer"
+                  >Démaquillant</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries11"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries11" class="flex-1 cursor-pointer"
+                  >Kit de rasage</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries12"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries12" class="flex-1 cursor-pointer"
+                  >Miroir</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="toiletries13"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="toiletries13" class="flex-1 cursor-pointer"
+                  >Médicaments (n'oubliez pas les pansements pour ampoules)</label
+                >
+              </li>
+            </ul>
+
+            <h2 class="font-bold text-primary text-xl mt-6 mb-2">Autre</h2>
+            <ul class="packing-list">
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other1"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other1" class="flex-1 cursor-pointer"
+                  >Assiette, tasse, bol pour la soupe (compatible
+                  lave-vaisselle)</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other2"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other2" class="flex-1 cursor-pointer"
+                  >Couverts : cuillère, fourchette, couteau (compatible
+                  lave-vaisselle)</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other3"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other3" class="flex-1 cursor-pointer"
+                  >Mug à thé ou café (compatible lave-vaisselle)</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other4"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other4" class="flex-1 cursor-pointer"
+                  >Carte bancaire (pour les boissons)</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other5"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other5" class="flex-1 cursor-pointer"
+                  >Carte d'identité ou passeport</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other6"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other6" class="flex-1 cursor-pointer"
+                  >Carte étudiante (avec justificatif d'inscription)</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other7"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other7" class="flex-1 cursor-pointer"
+                  >Téléphone</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other8"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other8" class="flex-1 cursor-pointer"
+                  >Chargeur de téléphone</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other9"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other9" class="flex-1 cursor-pointer"
+                  >Rallonge électrique (optionnel)</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other10"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other10" class="flex-1 cursor-pointer"
+                  >Matériel pour encourager l'équipe</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other11"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other11" class="flex-1 cursor-pointer"
+                  >Appareil photo</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other12"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other12" class="flex-1 cursor-pointer"
+                  >Lampe de poche</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other13"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other13" class="flex-1 cursor-pointer"
+                  >Bonne humeur, énergie et enthousiasme débordant !</label
+                >
+              </li>
+              <li class="flex items-center gap-3 py-1">
+                <input
+                  type="checkbox"
+                  id="other14"
+                  class="accent-primary w-5 h-5"
+                />
+                <label for="other14" class="flex-1 cursor-pointer"
+                  >Brosse pour vos chaussures de danse</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</Layout>
+
+<script>
+  if (typeof window !== "undefined") {
+    const ids = [
+      ...Array.from({ length: 14 }, (_, i) => `clothing${i + 1}`),
+      ...Array.from({ length: 6 }, (_, i) => `sleep${i + 1}`),
+      ...Array.from({ length: 13 }, (_, i) => `toiletries${i + 1}`),
+      ...Array.from({ length: 14 }, (_, i) => `other${i + 1}`),
+    ];
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el && el instanceof HTMLInputElement) {
+        // Restore state
+        el.checked = sessionStorage.getItem(id) === "true";
+        // Save state on change
+        el.addEventListener("change", () => {
+          sessionStorage.setItem(id, el.checked.toString());
+        });
+      }
+    });
+  }
+</script>
+
+<style>
+  .container {
+    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+      Arial, sans-serif;
+    min-height: 100vh;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .packing-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .packing-list li {
+    border-radius: 0.5rem;
+    transition: background 0.2s;
+  }
+  .packing-list li:hover {
+    font-weight: bold;
+    color: var(--color-primary);
+  }
+  .packing-list input[type="checkbox"] {
+    accent-color: var(--color-primary);
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+  .packing-list label {
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.5;
+    cursor: pointer;
+    user-select: none;
+  }
+  @media (max-width: 768px) {
+    .packing-list label {
+      font-size: 0.95rem;
+    }
+    .packing-list input[type="checkbox"] {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+</style>

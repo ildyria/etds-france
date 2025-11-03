@@ -1,0 +1,641 @@
+---
+import Hero from "../components/Hero.astro";
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+---
+
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
+
+    <main class=" max-w-7xl">
+      <Hero title="Code de Conduite" />
+
+      <section>
+        <p class="mx-auto w-3/4 text-justify">
+          Le 71e Tournoi Européen des Étudiants Danseurs (ETDS) s'engage
+          à assurer un environnement sûr et respectueux pour tous les participants.
+          Ce Code de Conduite définit les attentes des organisateurs de l'événement et
+          les directives de comportement pour garantir une expérience de compétition
+          agréable. Ce Code de Conduite est inspiré de l'ETDS de Southampton.
+          En tant que participant, vous acceptez de respecter ce code de conduite pendant
+          toute la durée du Tournoi et êtes soumis aux décisions des organisateurs
+          concernant tout comportement inacceptable.
+        </p>
+      </section>
+
+      <section class="w-full flex flex-wrap">
+        <div class="w-1/2">
+          <h2>Champ d'Application du Code de Conduite</h2>
+          <p>
+            Ce Code de Conduite s'applique à tous les participants du 70e
+            ETDS, notamment :
+          </p>
+          <ul>
+            <li>Compétiteurs</li>
+            <li>Capitaines d'Équipe</li>
+            <li>Juges</li>
+            <li>Personnel et Bénévoles</li>
+            <li>Spectateurs</li>
+          </ul>
+          <p>
+            En participant à l'événement, tous les individus acceptent de respecter
+            les directives et les normes énoncées dans ce Code de Conduite afin
+            d'assurer une expérience respectueuse, équitable et agréable pour tous.
+          </p>
+        </div>
+
+        <div class="w-1/2">
+          <h2>Conduite Générale</h2>
+          <ul>
+            <li>
+              <strong>Respect et Inclusion :</strong> Promouvoir et maintenir un environnement
+              de respect mutuel et d'inclusion. Traiter tous les compétiteurs, le personnel,
+              les juges, les bénévoles et les spectateurs avec courtoisie. S'abstenir de tout
+              harcèlement, intimidation ou discrimination. (Voir Annexe 1)
+            </li>
+            <li>
+              <strong>Intégrité :</strong> Maintenir l'intégrité du tournoi
+              en respectant les règles et les directives.
+            </li>
+            <li>
+              <strong>Sécurité :</strong> Agir en tout temps de manière à promouvoir
+              la sécurité de soi-même et des autres. Ne pas adopter de comportements
+              dangereux ou risqués. Suivre les instructions du personnel du tournoi et
+              du lieu pour maintenir un environnement sûr pour tous.
+            </li>
+            <li>
+              <strong>Esprit Sportif :</strong> Maintenir une conduite sportive dans
+              la victoire comme dans la défaite. Représenter le Tournoi et votre équipe
+              de manière positive.
+            </li>
+            <li>
+              <strong>Protection :</strong> Respecter et adhérer aux règles du
+              lieu et à toutes les politiques de protection pertinentes.
+            </li>
+          </ul>
+        </div>
+
+        <div class="w-full">
+          <h2>Déclaration de Santé et d'Éligibilité</h2>
+          <p>
+            En participant à cette compétition de danse, tous les participants confirment
+            qu'ils sont suffisamment en forme et en bonne santé pour s'engager dans les
+            activités physiques requises. Les participants reconnaissent qu'ils sont
+            responsables de leur propre santé et bien-être. Veuillez noter que des
+            services de premiers secours seront disponibles sur place pour répondre
+            à tout besoin médical ou urgence pouvant survenir pendant la compétition.
+            Les participants sont encouragés à solliciter l'assistance du personnel
+            de premiers secours désigné si nécessaire.
+          </p>
+          <p>
+            En s'inscrivant, les participants acceptent ces conditions et confirment
+            leur éligibilité et leur aptitude à participer.
+          </p>
+        </div>
+
+        <div class="w-1/2">
+          <h2>Attentes envers les Danseurs</h2>
+          <ul>
+            <li>
+              <strong>Conduite Générale :</strong> Respect des attentes de
+              la Conduite Générale
+            </li>
+            <li>
+              <strong>Ponctualité :</strong> Arriver à l'heure pour vos événements programmés.
+              Les événements ne seront pas reportés ou reprogrammés pour les retardataires sauf
+              à la discrétion des organisateurs.
+            </li>
+            <li>
+              <strong>Tenue :</strong> Porter une tenue appropriée à l'usage
+              et sécuritaire. La tenue doit respecter les directives de la compétition (Voir Annexe
+              2).
+            </li>
+          </ul>
+
+          <h2>Expectations for Coaches and Team Captains</h2>
+          <ul>
+            <li>
+              <strong>General Conduct:</strong> Adherence to the expectations for
+              General Conduct
+            </li>
+            <li>
+              <strong>Guidance:</strong> Ensure dancers are aware of and comply with
+              the competition rules and schedule.
+            </li>
+            <li>
+              <strong>Conduct:</strong> Maintain professional conduct and refrain
+              from negative comments or actions. Lead by example to foster a safe,
+              respectful environment.
+            </li>
+            <li>
+              <strong>Conflict Resolution:</strong> Address any disputes or concerns
+              through appropriate channels.
+            </li>
+            <li>
+              <strong>Team Supervision:</strong> Monitor your team’s behaviour throughout
+              the event. Promptly report any incidents or concerns to Tournament
+              staff about the behaviour of your own team and others.
+            </li>
+            <li>
+              <strong>Safety:</strong> Prioritise the safety and well-being of all
+              participants. Report any concerns to the Tournament staff immediately.
+            </li>
+          </ul>
+
+          <h2>Attentes envers les Juges</h2>
+          <ul>
+            <li>
+              <strong>Conduite Générale :</strong> Respect des attentes de
+              la Conduite Générale
+            </li>
+            <li>
+              <strong>Impartialité :</strong> Juger toutes les performances de manière impartiale
+              et sans préjugés.
+            </li>
+            <li>
+              <strong>Confidentialité :</strong> Garder tous les scores et retours confidentiels
+              jusqu'à leur publication officielle.
+            </li>
+            <li>
+              <strong>Professionnalisme :</strong> Fournir des retours constructifs de
+              manière respectueuse et professionnelle. Maintenir une communication courtoise
+              en tout temps.
+            </li>
+            <li>
+              <strong>Cohérence :</strong> Appliquer les critères de jugement de manière cohérente
+              pour toutes les performances.
+            </li>
+          </ul>
+
+          <h2>Attentes envers le Personnel et les Bénévoles</h2>
+          <ul>
+            <li>
+              <strong>Conduite Générale :</strong> Respect des attentes de
+              la Conduite Générale
+            </li>
+            <li>
+              <strong>Assistance :</strong> Fournir une aide utile et courtoise
+              à tous les participants et spectateurs.
+            </li>
+            <li>
+              <strong>Fiabilité :</strong> Accomplir les tâches assignées rapidement et
+              efficacement.
+            </li>
+            <li>
+              <strong>Communication :</strong> Communiquer clairement et efficacement
+              avec les officiels de la compétition et les participants.
+            </li>
+          </ul>
+        </div>
+
+        <div class="w-1/2">
+          <h2>Attentes envers les Spectateurs</h2>
+          <ul>
+            <li>
+              <strong>Conduite Générale :</strong> Respect des attentes de
+              la Conduite Générale
+            </li>
+            <li>
+              <strong>Comportement :</strong> Maintenir un comportement approprié, évitant
+              les actions ou commentaires perturbateurs.
+            </li>
+            <li>
+              <strong>Conformité :</strong> Suivre toutes les règles du lieu et les instructions
+              du personnel de la compétition.
+            </li>
+          </ul>
+
+          <h2>Conduite Interdite</h2>
+          <ul>
+            <li>
+              <strong>Harcèlement :</strong> Toute forme de harcèlement, discrimination
+              ou intimidation ne sera pas tolérée.
+            </li>
+            <li>
+              <strong>Comportement Antisportif :</strong> Tout comportement négatif envers
+              les compétiteurs, juges ou officiels est interdit.
+            </li>
+            <li>
+              <strong>Actions Illégales et Abus de Substances :</strong> La participation à
+              toute activité illégale, y compris l'usage de drogues ou autres substances interdites,
+              est strictement interdite et entraînera l'expulsion immédiate du lieu.
+            </li>
+            <li>
+              <strong>Dommages :</strong> Les dommages délibérés au lieu ou aux biens
+              de la compétition sont inacceptables.
+            </li>
+          </ul>
+
+          <h2>Signalement des Infractions</h2>
+          <p>
+            Si vous êtes témoin ou victime d'une infraction, veuillez le signaler immédiatement
+            à un officiel de la compétition ou à un membre du personnel désigné. Tous
+            les signalements seront pris au sérieux et feront l'objet d'une enquête rapide.
+          </p>
+
+          <h2>Conséquences des Infractions</h2>
+          <p>
+            Les violations de ce Code de Conduite peuvent entraîner des mesures
+            disciplinaires, incluant mais ne se limitant pas à :
+          </p>
+          <ul>
+            <li><strong>Avertissements :</strong> Avertissements verbaux ou écrits.</li>
+            <li>
+              <strong>Disqualification :</strong> Disqualification du Tournoi
+              ou des événements concernés.
+            </li>
+            <li><strong>Expulsion :</strong> Expulsion du lieu.</li>
+            <li>
+              <strong>Interdictions :</strong> Interdictions temporaires ou permanentes de participation aux futures compétitions.
+            </li>
+            <li>
+              <strong>Actions Supplémentaires :</strong> Communication avec les autorités compétentes
+              si une action en justice est jugée nécessaire.
+            </li>
+          </ul>
+          <p>
+            Sachez que tous les participants sont soumis à la décision finale des
+            organisateurs de l'événement et que les conséquences seront appliquées
+            si nécessaire.
+          </p>
+        </div>
+
+        <div class="w-full">
+          <h2 class="text-center! w-full">Conclusion</h2>
+            <p class="mx-auto w-3/4 text-justify">
+            En participant au 70e ETDS, vous acceptez de respecter ce Code
+            de Conduite. Ensemble, nous pouvons créer une expérience positive,
+            respectueuse et agréable pour tous les participants. Merci de votre
+            coopération et bonne chance à tous les compétiteurs !
+          </p>
+        </div>
+      </section>
+
+      <section class="flex">
+        <div>
+          <h2>Annexe 1 : Harcèlement, Discrimination et Intimidation</h2>
+          <h3>Harcèlement</h3>
+          <p>
+            Le harcèlement est tout comportement non désiré, importun ou inapproprié
+            qui crée un environnement hostile ou intimidant. Cela inclut,
+            sans s'y limiter :
+          </p>
+          <ul>
+            <li>
+              <strong>Harcèlement Verbal</strong>
+              <ul>
+                <li>Commentaires désobligeants, insultes ou blagues offensantes.</li>
+                <li>Langage intimidant ou menaçant.</li>
+                <li>Avances ou propositions persistantes et importunes.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Harcèlement Physique</strong>
+              <ul>
+                <li>
+                  Contact physique non désiré, comme toucher, étreindre ou
+                  frôler quelqu'un.
+                </li>
+                <li>Intimidation physique ou blocage du passage de quelqu'un.</li>
+                <li>Agression ou menaces de violence.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Harcèlement Visuel</strong>
+              <ul>
+                <li>
+                  Affichage ou partage d'images, vidéos ou gestes
+                  inappropriés ou offensants.
+                </li>
+                <li>
+                  Regards insistants ou déplacés qui mettent quelqu'un
+                  mal à l'aise.
+                </li>
+                <li>
+                  Attention non désirée ou commentaires inappropriés sur
+                  l'apparence ou la tenue vestimentaire.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Discrimination</h3>
+          <p>
+            La discrimination consiste à traiter quelqu'un de manière injuste ou
+            défavorable en raison de certaines caractéristiques ou attributs.
+            Cela inclut, sans s'y limiter :
+          </p>
+          <ul>
+            <li>
+              <strong>Discrimination Raciale</strong>
+              <ul>
+                <li>
+                  Faire des commentaires négatifs ou des blagues sur la race ou
+                  l'origine ethnique d'une personne.
+                </li>
+                <li>
+                  Exclure ou isoler quelqu'un en raison de sa race ou de son
+                  origine ethnique.
+                </li>
+                <li>
+                  Refuser des opportunités ou des ressources en raison de la race
+                  ou de l'origine ethnique.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Discrimination de Genre</strong>
+              <ul>
+                <li>Faire des remarques ou blagues sexistes.</li>
+                <li>
+                  Traiter quelqu'un injustement en raison de son genre ou de son
+                  identité de genre.
+                </li>
+                <li>
+                  Refuser des opportunités ou des ressources en raison du genre
+                  ou de l'identité de genre.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Discrimination Liée à l'Âge</strong>
+              <ul>
+                <li>Faire des commentaires ou blagues âgistes.</li>
+                <li>Traiter quelqu'un injustement en raison de son âge.</li>
+                <li>Exclure ou isoler quelqu'un en raison de son âge.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Discrimination Liée au Handicap</strong>
+              <ul>
+                <li>Faire des commentaires désobligeants sur le handicap de quelqu'un.</li>
+                <li>
+                  Exclure ou isoler quelqu'un en raison de son handicap.
+                </li>
+                <li>Refuser des opportunités ou des ressources en raison d'un handicap.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Discrimination Liée à l'Orientation Sexuelle</strong>
+              <ul>
+                <li>Faire des commentaires ou blagues homophobes ou transphobes.</li>
+                <li>
+                  Traiter quelqu'un injustement en raison de son orientation sexuelle.
+                </li>
+                <li>
+                  Exclure ou isoler quelqu'un en raison de son orientation
+                  sexuelle.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Intimidation</h3>
+          <p>
+            L'intimidation est un comportement agressif répété visant à blesser ou
+            intimider une autre personne. Cela inclut, sans s'y limiter :
+          </p>
+          <ul>
+            <li>
+              <strong>Intimidation Verbale</strong>
+              <ul>
+                <li>Insultes, moqueries ou sobriquets.</li>
+                <li>Propagation de rumeurs ou de commérages.</li>
+                <li>Humiliation publique ou ridicule.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Intimidation Physique</strong>
+              <ul>
+                <li>Frapper, donner des coups de pied ou pousser.</li>
+                <li>Endommager ou voler des effets personnels.</li>
+                <li>Menacer de violence physique.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Intimidation Sociale</strong>
+              <ul>
+                <li>Exclure quelqu'un des groupes ou activités.</li>
+                <li>Encourager les autres à exclure ou isoler quelqu'un.</li>
+                <li>
+                  Propager des rumeurs ou faire de fausses accusations pour nuire
+                  à la réputation de quelqu'un.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Cyberintimidation</strong>
+              <ul>
+                <li>
+                  Envoyer des messages menaçants, abusifs ou humiliants en ligne.
+                </li>
+                <li>Partager des informations ou images privées sans consentement.</li>
+                <li>Créer de faux profils pour harceler ou intimider quelqu'un.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Traitement des Comportements Inacceptables</h3>
+          <p>
+            Si vous êtes victime ou témoin de toute forme de harcèlement, discrimination
+            ou intimidation, veuillez le signaler immédiatement à un officiel de la compétition
+            ou à un membre du personnel désigné. Tous les signalements seront pris au sérieux
+            et feront l'objet d'une enquête rapide. La confidentialité sera maintenue dans
+            la mesure du possible, et des mesures appropriées seront prises pour traiter
+            le comportement et protéger les personnes concernées.
+          </p>
+          <p>
+            Tous les participants sont soumis à la décision finale des organisateurs
+            de l'événement et, si nécessaire, des conséquences seront appliquées. Celles-ci
+            peuvent inclure, sans s'y limiter :
+          </p>
+          <ul>
+            <li><strong>Avertissements :</strong> Avertissements verbaux ou écrits.</li>
+            <li>
+              <strong>Disqualification :</strong> Disqualification de la compétition.
+            </li>
+            <li><strong>Expulsion :</strong> Expulsion du lieu.</li>
+            <li>
+              <strong>Interdictions :</strong> Interdictions temporaires ou permanentes de participation aux futures compétitions.
+            </li>
+            <li>
+              <strong>Actions Supplémentaires :</strong> Communication avec les autorités compétentes
+              si une action en justice est jugée nécessaire.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Annexe 2 : Directives pour la Tenue de Compétition</h2>
+          <p>
+            Pour assurer un environnement professionnel, respectueux et sûr pour tous
+            les participants, veuillez respecter les directives suivantes concernant
+            les tenues appropriées pour la compétition de danse :
+          </p>
+          <ul>
+            <li>
+              <strong>Modestie :</strong> Les costumes doivent être appropriés à la performance
+              et couvrir le corps de manière adéquate. Évitez les vêtements trop révélateurs
+              ou provocants.
+            </li>
+            <li>
+              <strong>Ajustement et Fonctionnalité :</strong> Assurez-vous que les costumes
+              sont bien ajustés et permettent une liberté de mouvement complète. Évitez les
+              vêtements trop amples ou serrés qui pourraient gêner les mouvements ou
+              présenter un risque pour la sécurité.
+            </li>
+            <li>
+              <strong>Chaussures Appropriées :</strong> Portez des chaussures adaptées au
+              style de danse pratiqué. Assurez-vous que les chaussures sont en bon état et
+              bien ajustées pour prévenir les blessures.
+            </li>
+            <li>
+              <strong>Pas de Contenu Offensant :</strong> Les costumes ne doivent pas
+              comporter de langage, symboles ou images offensants. Cela inclut l'évitement
+              de slogans ou designs inappropriés.
+            </li>
+            <li>
+              <strong>Sensibilité Culturelle :</strong> Soyez attentifs aux appropriations
+              culturelles. Assurez-vous que les costumes respectent les symboles et tenues
+              culturels sans les dénaturer ou les banaliser.
+            </li>
+          </ul>
+
+          <h2>Annexe 3 : Déclaration d'Accessibilité</h2>
+          <p>
+            Nous nous engageons à garantir que notre compétition de danse soit
+            accessible à tous les participants, spectateurs et membres du personnel.
+            Notre objectif est de créer un environnement inclusif où chacun peut
+            pleinement participer et profiter de l'événement. Nous encourageons tous
+            les participants à communiquer avec le personnel du Tournoi et du lieu afin
+            que les différents besoins puissent être pris en compte efficacement.
+          </p>
+
+          <h3>Accessibilité du Lieu</h3>
+          <ul>
+            <li>
+              <strong>Entrées et Sorties :</strong> Le lieu est équipé d'entrées et
+              sorties accessibles pour accueillir les personnes à mobilité réduite.
+            </li>
+            <li>
+              <strong>Places Assises :</strong> Des places accessibles sont disponibles
+              pour les spectateurs qui en ont besoin. Veuillez nous informer à l'avance
+              si vous avez besoin d'arrangements spéciaux.
+            </li>
+            <li>
+              <strong>Installations :</strong> Des toilettes accessibles sont disponibles
+              dans le lieu.
+            </li>
+            <li>
+              <strong>Stationnement :</strong> Des places de stationnement accessibles
+              sont prévues à proximité des entrées du lieu.
+            </li>
+          </ul>
+
+          <h3>Participation</h3>
+          <ul>
+            <li>
+              <strong>Aide à l'Inscription :</strong> Si vous avez besoin d'aide pour
+              le processus d'inscription, veuillez nous contacter, et nous vous fournirons
+              le soutien nécessaire pour compléter votre inscription.
+            </li>
+            <li>
+              <strong>Aménagements pour les Performances :</strong> Les participants nécessitant
+              des aménagements spécifiques pour leur performance, comme du temps supplémentaire
+              pour l'installation ou du matériel spécial, sont encouragés à en informer les
+              organisateurs de la compétition à l'avance.
+            </li>
+          </ul>
+
+          <h3>Services de Soutien</h3>
+          <ul>
+            <li>
+              <strong>Communication :</strong> Nous veillerons à ce que les informations
+              sur l'événement soient disponibles dans des formats accessibles sur demande.
+              Cela inclut les documents imprimés, les horaires et les annonces.
+            </li>
+            <li>
+              <strong>Premiers Secours :</strong> Des services de premiers secours sont
+              disponibles sur place pour répondre à tout besoin médical ou urgence.
+            </li>
+            <li>
+              <strong>Personnel d'Assistance :</strong> Si vous avez besoin d'un assistant
+              personnel ou d'un accompagnateur pendant l'événement, ils auront accès au
+              lieu pour vous fournir l'assistance nécessaire.
+            </li>
+          </ul>
+
+          <p>
+            Notre engagement envers l'accessibilité garantit que chacun puisse profiter
+            pleinement et participer à notre compétition de danse. Merci de nous aider
+            à créer un environnement inclusif et accueillant pour tous.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+</Layout>
+
+<style>
+section h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+section {
+  font-size: 0.91rem;
+}
+  section div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+  .container {
+    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+      Arial, sans-serif;
+    min-height: 100vh;
+  }
+
+  main {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  section ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  section ul li {
+    color: inherit;
+    font-size: 0.97rem;
+  }
+  section ul li::marker {
+    color: var(--color-secondary);
+  }
+  section ul ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1.5rem;
+  }
+  section ul li strong {
+    color: var(--color-primary);
+  }
+
+  section p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+  }
+</style>

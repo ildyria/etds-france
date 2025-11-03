@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0055a4;
+  --color-secondary: #ef4135;
+  --color-background: #f9f9f9;
+  --color-text: #333333;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}

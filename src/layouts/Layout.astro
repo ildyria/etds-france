@@ -1,22 +1,39 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+---
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta name="description" content="ETDS France - Tournoi Européen pour les Étudiants Danseurs. Rejoignez-nous pour célébrer la passion de la danse avec des étudiants de toute l'Europe." />
+		<meta name="keywords" content="ETDS, danse, étudiants, tournoi européen, compétition danse, France" />
+		<title>ETDS - Equipe France | Tournoi Européen pour les Étudiants Danseurs</title>
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
 </html>
 
-<style>
+<style is:global>
+	* {
+		box-sizing: border-box;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
 	html,
 	body {
 		margin: 0;
+		padding: 0;
 		width: 100%;
-		height: 100%;
+		min-height: 100%;
+		background: linear-gradient(135deg, #e8f0f7 0%, #ffffff 50%, #fceae9 100%);
 	}
 </style>

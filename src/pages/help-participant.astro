@@ -1,0 +1,238 @@
+---
+import Hero from "../components/Hero.astro";
+import IntroSection from "../components/IntroSection.astro";
+import ContentSection from "../components/ContentSection.astro";
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+import AccordionContainer from "../components/AccordionContainer.astro";
+import AccordionItem from "../components/AccordionItem.astro";
+---
+
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
+
+    <main>
+      <Hero title="Guide du Participant" />
+
+      <IntroSection>
+        <p>
+          Vous trouverez ici toutes les informations de base à connaître avant
+          et pendant le week-end. Nous supposons que vous avez déjà participé à
+          un ETDS (ou NTDS). Sinon, consultez la <a href="/help-newbies"
+            >page des nouveaux arrivants</a
+          >.
+          <br /><br />
+          Pour toute question, vérifiez d'abord auprès de votre capitaine d'équipe.
+          S'il ne sait pas, demandez-lui de nous contacter afin que l'information
+          circule par les bons canaux. S'il ne répond pas et que vous paniquez, vous
+          pouvez bien sûr nous envoyer un email.
+        </p>
+      </IntroSection>
+
+      <!-- Before ETDS Section -->
+      <ContentSection title="Avant l'ETDS">
+        <AccordionContainer>
+          <AccordionItem header="Comment s'inscrire ?">
+            L'inscription se fait via les capitaines d'équipe. Si vous êtes sur
+            ce site, vous savez probablement qui est votre capitaine. Le
+            paiement se fait également via votre capitaine ou votre association.
+            Si vous ne connaissez pas votre capitaine ou n'en avez pas encore,
+            envoyez-nous un email.
+          </AccordionItem>
+          <AccordionItem header="Mon mail d'activation n'arrive pas !">
+            Essayez d'abord d'aller sur <a
+              href="https://fall.xtds.dance/activate/new/example@example.com"
+              target="_blank"
+              >https://fall.xtds.dance/activate/new/example@example.com</a
+            >, en remplaçant example@example.com par votre propre adresse email.
+            Si cela ne fonctionne pas, et que vous avez vérifié vos spams,
+            envoyez-nous un email et nous regarderons cela !
+          </AccordionItem>
+          <AccordionItem header="Y a-t-il une liste de choses à emporter ?">
+            Nous avons une liste de choses à emporter ! Vous pouvez la trouver
+            ici !
+          </AccordionItem>
+          <AccordionItem header="Puis-je me garer sur le site ?">
+            Oui, il y a des places de parking disponibles, mais elles sont
+            limitées.
+          </AccordionItem>
+          <AccordionItem header="Puis-je venir en train ?">
+            Oui ! Mais il faut prendre un bus depuis une gare à proximité.
+          </AccordionItem>
+        </AccordionContainer>
+      </ContentSection>
+
+      <ContentSection title="À l'ETDS - Général">
+        <AccordionContainer>
+          <AccordionItem
+            header="La nourriture est-elle incluse ? Et les boissons ? Et les restrictions alimentaires ?"
+          >
+            La nourriture qui sera fournie :
+            <ul class="marker:text-secondary text-left list-[square] list-inside mb-2">
+              <li>Brunch et dîner le samedi</li>
+              <li>Brunch et dîner le dimanche</li>
+              <li>Petit-déjeuner le lundi</li>
+            </ul>
+            Le menu exact pour le déjeuner et le dîner sera publié sur notre site
+            au moins une semaine avant le début de l'ETDS. Pendant le petit-déjeuner
+            et le déjeuner, des boissons comme du lait, du café et du thé seront
+            disponibles.<br /><br />
+            Il y aura de la nourriture pour les personnes allergiques, si notre traiteur
+            peut le gérer. Il y a aussi des plats spéciaux pour les végétariens et
+            les vegans. <strong
+              >Cela doit être mentionné lors de l'inscription !</strong
+            > Les personnes qui n'ont pas indiqué être vegan/végétarien ne sont pas
+            autorisées à prendre ces plats. Vous <strong>devez</strong> apporter
+            vos propres couverts et assiette !<br /><br />
+            Vous pouvez acheter des boissons supplémentaires dans la salle du tournoi.
+            Pour plus d'informations, consultez la <a href=""
+              >page nourriture et boissons</a
+            >.
+          </AccordionItem>
+          <AccordionItem
+            header="Si je veux des boissons, dois-je payer par carte ou en espèces ?"
+          >
+            Les boissons achetées au bar doivent être payées par carte. Les
+            paiements sans contact sont également possibles. La plupart des
+            cartes et cartes de crédit sont acceptées.
+          </AccordionItem>
+          <AccordionItem
+            header="Peut-on commander de la nourriture sur le site ?"
+          >
+            Oui, cela ne pose aucun problème.
+          </AccordionItem>
+          <AccordionItem header="Le bénévolat est-il obligatoire ?">
+            Oui, chaque participant est censé aider pour que l'ETDS ait lieu.
+            C'est la seule façon de garder les coûts bas. Chaque équipe se voit
+            attribuer un certain nombre d'OHH (Obligatory Helping Hours). La
+            répartition se fait via le capitaine d'équipe.<br /><br />
+            Vous voulez aider davantage ? Super ! Vous pouvez l'indiquer dans le
+            portail après vous être connecté. Si cela ne fonctionne pas, ou si vous
+            ne savez pas quoi faire, contactez votre capitaine. Aider en plus donne
+            des points à votre équipe pour gagner le prix de la meilleure équipe
+            ! Pour plus d'informations, consultez la page bénévolat.
+          </AccordionItem>
+          <AccordionItem
+            header="Les dortoirs restent-ils ouverts pendant la journée / doivent-ils être vidés ?"
+          >
+            Bonne nouvelle, les dortoirs n'ont pas à être vidés pendant la
+            journée. Vous pouvez simplement laisser toutes vos affaires sur
+            place.
+          </AccordionItem>
+          <AccordionItem header="Puis-je recharger mon téléphone sur le site ?">
+            Il n'y aura pas de station de recharge dédiée pour les téléphones.
+            Cela signifie que vous devez apporter vos propres multiprises pour
+            les dortoirs.
+          </AccordionItem>
+          <AccordionItem
+            header="En quoi consiste la présentation des équipes ?"
+          >
+            En général à l'ETDS, les équipes sont simplement appelées par ville
+            et toute l'équipe entre sur la piste.
+          </AccordionItem>
+          <AccordionItem
+            header="Mes amis / ma famille peuvent-ils venir regarder ?"
+          >
+            Ils sont les bienvenus pour venir vous voir pendant les
+            compétitions. Notez cependant que l'inscription est obligatoire et
+            que le nombre de billets disponibles est limité. Pour plus
+            d'informations, consultez la page visiteurs.<br /><br />
+            Pensez à leur communiquer l'horaire afin qu'ils sachent quand venir.
+          </AccordionItem>
+        </AccordionContainer>
+      </ContentSection>
+
+      <ContentSection title="À l'ETDS - Danse">
+        <AccordionContainer>
+          <AccordionItem header="Y a-t-il un programme préliminaire ?">
+            Oui ! Vous pouvez le trouver dans le programme sur la page
+            d'accueil. Il est encore très susceptible d'être modifié.
+          </AccordionItem>
+          <AccordionItem header="Y a-t-il des restrictions vestimentaires ?">
+            Oui ! Elles sont généralement les mêmes que pour tout ETDS.
+            Consultez toutes les restrictions sur la page du dress code !
+          </AccordionItem>
+          <AccordionItem
+            header="Quelles sont les classes et dans laquelle dois-je danser ?"
+          >
+            En général, lors d'un ETDS, il existe différentes classes. Pour
+            celui-ci, il y a une classe Breitensport et une classe CöOpen.
+            Breitensport est séparée en 6 classes et ClOpen en 2. En
+            Breitensport, vous dansez tous les uns contre les autres, quel que
+            soit le niveau. Après les qualifications, vous serez placé dans
+            l'une des 8 sous-classes :
+            <ul class="marker:text-secondary text-left list-[square] list-inside mb-2">
+              <li>Enthusiasts</li>
+              <li>Amateurs</li>
+              <li>Professionals</li>
+              <li>Masters</li>
+              <li>Champions</li>
+              <li>Legends</li>
+              <li>CloseD</li>
+              <li>Open</li>
+            </ul>
+            Pour plus d'informations, consultez la page des classes.
+          </AccordionItem>
+          <AccordionItem header="Y aura-t-il une redance ?">
+            Non, il n'y aura pas de redance. Comme il y aura deux tours de
+            qualification, vous aurez déjà 3 chances de montrer votre danse.
+          </AccordionItem>
+          <AccordionItem header="Quelles danses dois-je danser ?">
+            Les danses que vous devez danser varient selon la classe dans
+            laquelle vous êtes placé. De plus, cela peut signifier que vous
+            aurez des danses supplémentaires dans les tours suivants. Vous
+            pouvez trouver ces informations ici.
+          </AccordionItem>
+          <AccordionItem
+            header="Y a-t-il des restrictions pour le blind date ?"
+          >
+            Pour plus d'informations sur le blind date, consultez la page
+            d'information : Blind Dating
+          </AccordionItem>
+        </AccordionContainer>
+      </ContentSection>
+    </main>
+  </div>
+</Layout>
+
+<style>
+  .container {
+    font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+      Arial, sans-serif;
+    min-height: 100vh;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+</style>
+
+<script>
+  // Accordion functionality
+  document.addEventListener("DOMContentLoaded", () => {
+    const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+    accordionHeaders.forEach((header) => {
+      header.addEventListener("click", () => {
+        const accordionItem = header.parentElement;
+
+        if (!accordionItem) return;
+
+        const isActive = accordionItem.classList.contains("active");
+
+        // Close all accordion items
+        document.querySelectorAll(".accordion-item").forEach((item) => {
+          item.classList.remove("active");
+        });
+
+        // Open clicked item if it wasn't active
+        if (!isActive) {
+          accordionItem.classList.add("active");
+        }
+      });
+    });
+  });
+</script>
