@@ -1,0 +1,202 @@
+---
+import { YouTube } from "@astro-community/astro-embed-youtube";
+import Layout from "../layouts/Layout.astro";
+import BackgroundImage from "../components/BackgroundImage.astro";
+import Hero from "../components/Hero.astro";
+import IntroSection from "../components/IntroSection.astro";
+---
+
+<Layout>
+  <div class="container mx-auto">
+    <BackgroundImage />
+
+    <main class="max-w-5xl!">
+      <Hero title="Photos & Videos des éditions précédentes" />
+
+      <IntroSection>
+        <p>
+          Tu souhaites voir &agrave; quoi ressemble l'ETDS ? Voici quelques
+          photos et vid&eacute;os des &eacute;ditions pr&eacute;c&eacute;dentes
+          !
+        </p>
+        <p class="font-bold mt-4 text-xl">
+          Attention, la participation &agrave; l'ETDS peut &ecirc;tre
+          addictive...<br />
+          &Agrave; danser sans mod&eacute;ration ! 😉
+        </p>
+      </IntroSection>
+
+      <section>
+        <h2>Videos</h2>
+        <div>
+          <h3>ETDS Enschede 2022 goes Metal Walzing with Sabaton</h3>
+          <YouTube id="a6bAL3vytA4" params="start=17" />
+
+          <h3>Timelapse ETDS Delft</h3>
+          <YouTube id="v8-CybMY0es" />
+
+          <h3>Open latin final Chacha ETDS 2024 Southampton</h3>
+          <YouTube id="fBNfYfsPDvY" />
+
+          <h3>Open latin final Paso ETDS 2024 Southampton</h3>
+          <YouTube id="k_F-hVe7lyw" />
+
+          <h3>Open latin final Jive ETDS 2024 Southampton</h3>
+          <YouTube id="3n3P2TjfvcQ" />
+
+          <h3>
+            SUBLDS Goes to ETDS! European Dancing Tournament for Students -
+            October 2022'
+          </h3>
+          <YouTube id="9CIREQDwk40" />
+
+          <h3>ETDS 2016 Utrecht - aftervideo</h3>
+          <YouTube id="UOF_pZVqKvg" />
+        </div>
+      </section>
+
+      <section id="links">
+        <div class="font-bold mb-4">
+          Tu es vendu? Contacte le capitaine de l'&eacute;quipe et rejoins-nous
+          pour la prochaine &eacute;dition !
+        </div>
+        <a class="button secondary" href="#contact">Rejoindre l'&eacute;quipe</a
+        >
+      </section>
+
+      <section>
+        <h2>Gallerie photos</h2>
+        <div>
+          <h3>November 2024 - Southampton</h3>
+          <a
+            href="https://photography.viguier.nl/gallery/IqSqteP4VQYYbbvpi1D4p6CW"
+            >photography.viguier.nl/gallery/IqSqteP4VQYYbbvpi1D4p6CW</a
+          >
+
+          <h3>Mai 2024 - Enschede</h3>
+          <a
+            href="https://photography.viguier.nl/gallery/6GUNcRW5eu4Js5xnMSLsWMRh"
+            >photography.viguier.nl/gallery/6GUNcRW5eu4Js5xnMSLsWMRh</a
+          >
+
+          <h3>Octobre 2023 - Rotterdam</h3>
+          <a
+            href="https://photography.viguier.nl/gallery/MdIz7aKfxZdxlLmnbbEDgnYv"
+            >photography.viguier.nl/gallery/MdIz7aKfxZdxlLmnbbEDgnYv</a
+          >
+
+          <h3>Mai 2023 - Amsterdam</h3>
+          <a
+            href="https://photography.viguier.nl/gallery/02nhgmEis7ZBm6WO2SEzSuyL"
+            >photography.viguier.nl/gallery/02nhgmEis7ZBm6WO2SEzSuyL</a
+          >
+
+          <h3>Juin 2022 - Twente</h3>
+          <a
+            href="https://photography.viguier.nl/gallery/DrMXoWyy1DF5gVkppKfQkAud"
+            >photography.viguier.nl/gallery/DrMXoWyy1DF5gVkppKfQkAud</a
+          >
+
+          <h3>Juin 2019 - Clausthal</h3>
+          <a
+            href="https://photography.viguier.nl/gallery/NgXZFvlSWx_sOgSdvE4lqBAC"
+            >photography.viguier.nl/gallery/NgXZFvlSWx_sOgSdvE4lqBAC</a
+          >
+        </div>
+      </section>
+    </main>
+  </div>
+</Layout>
+
+<style>
+  section h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-top: 1.8rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  section {
+    font-size: 0.91rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  section div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+
+  section div lite-youtube {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  section ul li {
+    color: inherit;
+    font-size: 0.97rem;
+  }
+  section ul li::marker {
+    color: var(--color-secondary);
+  }
+  section ul ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1.5rem;
+  }
+  section ul li strong {
+    color: var(--color-primary);
+  }
+
+  section p {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  #links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 28px;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  #links a.button {
+    color: white;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #003d82 100%);
+    box-shadow: 0 4px 15px rgba(0, 85, 164, 0.4);
+  }
+
+  #links a.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 85, 164, 0.6);
+  }
+
+  #links a.button.secondary {
+    background: linear-gradient(135deg, #ef4135 0%, #c7362d 100%);
+    box-shadow: 0 4px 15px rgba(239, 65, 53, 0.4);
+  }
+
+  #links a.button.secondary:hover {
+    box-shadow: 0 6px 20px rgba(239, 65, 53, 0.6);
+  }
+</style>
