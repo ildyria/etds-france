@@ -6,6 +6,7 @@ import Layout from "../layouts/Layout.astro";
 import BackgroundImage from "../components/BackgroundImage.astro";
 import AccordionContainer from "../components/AccordionContainer.astro";
 import AccordionItem from "../components/AccordionItem.astro";
+import UL from "../components/UL.astro";
 ---
 
 <Layout>
@@ -69,13 +70,11 @@ import AccordionItem from "../components/AccordionItem.astro";
             header="La nourriture est-elle incluse ? Et les boissons ? Et les restrictions alimentaires ?"
           >
             La nourriture qui sera fournie :
-            <ul
-              class="marker:text-secondary text-left list-[square] list-inside mb-2"
-            >
+            <UL>
               <li>Brunch et dîner le samedi</li>
               <li>Brunch et dîner le dimanche</li>
               <li>Petit-déjeuner le lundi</li>
-            </ul>
+            </UL>
             Le menu exact pour le déjeuner et le dîner sera publié sur notre site
             au moins une semaine avant le début de l'ETDS. Pendant le petit-déjeuner
             et le déjeuner, des boissons comme du lait, du café et du thé seront
@@ -170,9 +169,7 @@ import AccordionItem from "../components/AccordionItem.astro";
             Breitensport, vous dansez tous les uns contre les autres, quel que
             soit le niveau. Après les qualifications, vous serez placé dans
             l'une des 8 sous-classes :
-            <ul
-              class="marker:text-secondary text-left list-[square] list-inside mb-2"
-            >
+            <UL>
               <li>Enthusiasts</li>
               <li>Amateurs</li>
               <li>Professionals</li>
@@ -181,7 +178,7 @@ import AccordionItem from "../components/AccordionItem.astro";
               <li>Legends</li>
               <li>CloseD</li>
               <li>Open</li>
-            </ul>
+            </UL>
             Pour plus d'informations, consultez la <a href="/classes"
               >page des classes</a
             >.

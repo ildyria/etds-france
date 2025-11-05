@@ -3,6 +3,9 @@ import Hero from "../components/Hero.astro";
 import IntroSection from "../components/IntroSection.astro";
 import Layout from "../layouts/Layout.astro";
 import BackgroundImage from "../components/BackgroundImage.astro";
+import HalfColumn from "../components/HalfColumn.astro";
+import H2 from "../components/H2.astro";
+import UL from "../components/UL.astro";
 ---
 
 <Layout>
@@ -22,8 +25,8 @@ import BackgroundImage from "../components/BackgroundImage.astro";
           ».
         </p>
         <section class="w-full flex flex-wrap">
-          <div class="w-1/2">
-            <h2>Vêtements</h2>
+          <HalfColumn>
+            <H2>Vêtements</H2>
             <p>
               Il n'est pas permis de danser en tenues de compétition.<br />
               <span class="text-muted text-sm">
@@ -51,22 +54,22 @@ import BackgroundImage from "../components/BackgroundImage.astro";
               >
               , y compris pendant la danse
             </p>
-            <ul>
+            <UL>
               <li>non transparents, pas de couleur chair</li>
               <li>applicable à tous les danseurs, quel que soit leur genre</li>
-            </ul>
+            </UL>
             <p class="mb-0!">
               Les tenues de compétition ne sont pas autorisées. Les exceptions
               sont :
             </p>
-            <ul>
+            <UL>
               <li>Les gilets</li>
               <li>Les pantalons de danse latine et standard</li>
               <li>Les chemises à boutons conçues pour la danse</li>
-            </ul>
+            </UL>
           </div>
-          <div class="w-1/2">
-            <h2>Chaussures</h2>
+          <HalfColumn>
+            <H2>Chaussures</H2>
             <p>Les chaussures de danse sont obligatoires</p>
 
             <p>
@@ -96,60 +99,3 @@ import BackgroundImage from "../components/BackgroundImage.astro";
     </main>
   </div>
 </Layout>
-<style>
-  section h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-primary);
-    margin-top: 1.8rem;
-    margin-bottom: 0.8rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-  section {
-    font-size: 0.91rem;
-  }
-  section div {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  section h2 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-top: 2.2rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-
-  section ul {
-    list-style-type: square;
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  section ul li {
-    color: var(--color-muted);
-    font-size: 0.97rem;
-    text-align: left;
-  }
-  section ul li::marker {
-    color: var(--color-secondary);
-  }
-  section ul ul {
-    margin-bottom: 0.5em;
-    padding-left: 1.5rem;
-  }
-  section ul li strong {
-    color: var(--color-primary);
-  }
-
-  section p {
-    margin-bottom: 1.2rem;
-    text-align: left;
-  }
-
-  section p strong {
-    color: var(--color-secondary);
-  }
-</style>

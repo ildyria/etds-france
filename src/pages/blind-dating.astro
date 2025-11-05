@@ -2,6 +2,9 @@
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import BackgroundImage from "../components/BackgroundImage.astro";
+import HalfColumn from "../components/HalfColumn.astro";
+import H2 from "../components/H2.astro";
+import UL from "../components/UL.astro";
 ---
 
 <Layout>
@@ -12,7 +15,7 @@ import BackgroundImage from "../components/BackgroundImage.astro";
       <Hero title="Le Blind Dating" />
 
       <section class="flex w-full">
-        <div class="w-1/2">
+        <HalfColumn>
           <p>
             Le Blind Dating signifie que vous trouvez un(e) partenaire de danse sur place le vendredi
             soir. C'est très amusant de participer à une compétition avec un(e) partenaire
@@ -41,17 +44,18 @@ import BackgroundImage from "../components/BackgroundImage.astro";
             concourir ensemble, vous pouvez vous rendre au bureau d'information pour vous
             inscrire en tant que couple.
           </p>
-        </div>
-        <div class="w-1/2">
-          <h2 class="mt-0!">Règles du Blind Dating</h2>
+        </HalfColumn>
+        <div class="w-1/2" >
+          <H2 class="mt-0!">Règles du Blind Dating</H2>
           <p class="mb-0!">Les règles suivantes s'appliquent :</p>
-          <ul>
+          <UL>
             <li>
               Les participants volontaires au blind dating n'ont aucune restriction concernant leur partenaire.
             </li>
             <li>
               Les participants obligatoires au blind dating ont les restrictions suivantes :
-              <ul>
+              <!-- This is needed to preserve the layout. -->
+              <ul class="marker:text-secondary text-left list-[square] list-inside mb-2 ml-6 text-sm">
                 <li>
                   Vous ne pouvez pas faire de blind dating avec quelqu'un avec qui, au cours des 3 dernières années,
                   vous avez concouru (ETDS, NTDS, autre compétition, etc.) ou
@@ -65,70 +69,17 @@ import BackgroundImage from "../components/BackgroundImage.astro";
               meneur/suiveur. Si vous vous inscrivez pour danser dans le rôle opposé,
               le blind dating devient volontaire.
             </li>
-          </ul>
-          <h2>Couleurs du Blind Dating</h2>
+          </UL>
+
+          <H2>Couleurs du Blind Dating</H2>
           <p>
-            MENEURS (lead) Standard : BLEU <br />
-            SUIVEURS (follow) Standard : ROUGE<br />
-            MENEURS (lead) Latin : VIOLET<br />
-            SUIVEURS (follow) Latin : JAUNE
+            MENEURS (lead) Standard : <span class="text-blue-700 font-bold">BLEU</span><br />
+            SUIVEURS (follow) Standard : <span class="text-red-700 font-bold">ROUGE</span><br />
+            MENEURS (lead) Latin : <span class="text-violet-700 font-bold">VIOLET</span><br />
+            SUIVEURS (follow) Latin : <span class="text-yellow-700 font-bold">JAUNE</span>
           </p>
-        </div>
+        </HalfColumn>
       </section>
     </main>
   </div>
 </Layout>
-
-<style>
-  section h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-primary);
-    margin-top: 1.8rem;
-    margin-bottom: 0.8rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-  section {
-    font-size: 0.91rem;
-  }
-  section div {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  section h2 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-top: 2.2rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-
-  section ul {
-    list-style-type: square;
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  section ul li {
-    color: var(--color-muted);
-    font-size: 0.97rem;
-    text-align: left;
-  }
-  section ul li::marker {
-    color: var(--color-secondary);
-  }
-  section ul ul {
-    margin-bottom: 0.5em;
-    padding-left: 1.5rem;
-  }
-  section ul li strong {
-    color: var(--color-primary);
-  }
-
-  section p {
-    margin-bottom: 1.2rem;
-    text-align: left;
-  }
-</style>

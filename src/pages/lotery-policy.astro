@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import BackgroundImage from "../components/BackgroundImage.astro";
 import Hero from "../components/Hero.astro";
+import HalfColumn from "../components/HalfColumn.astro";
 ---
 
 <Layout>
@@ -30,7 +31,7 @@ import Hero from "../components/Hero.astro";
       </section>
 
       <section class="w-full flex flex-wrap">
-        <div class="w-1/2">
+        <HalfColumn>
           <h2>Conditions</h2>
           <p class="mb-0!">
             Afin de sélectionner équitablement les participants à l’ETDS, un
@@ -73,8 +74,8 @@ import Hero from "../components/Hero.astro";
             Des sélections supplémentaires seront effectuées en fonction des
             annulations et pour équilibrer les nombres de meneurs et de suiveurs.
           </p>
-        </div>
-        <div class="w-1/2">
+        </HalfColumn>
+        <HalfColumn>
           <h2>Partenaires</h2>
           <p>
             Si une personne inscrite avec un partenaire est tirée au sort, ce
@@ -106,7 +107,7 @@ import Hero from "../components/Hero.astro";
             <li>l’équilibrage de dernière minute de la répartition meneur/suiveur.</li>
           </ul>
           <p>Ces places sont attribuées par l’organisation.</p>
-        </div>
+        </HalfColumn>
       </section>
     </main>
   </div>

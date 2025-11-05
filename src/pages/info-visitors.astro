@@ -3,6 +3,8 @@ import Hero from "../components/Hero.astro";
 import IntroSection from "../components/IntroSection.astro";
 import Layout from "../layouts/Layout.astro";
 import BackgroundImage from "../components/BackgroundImage.astro";
+import HalfColumn from "../components/HalfColumn.astro";
+import H2 from "../components/H2.astro";
 ---
 
 <Layout>
@@ -15,8 +17,8 @@ import BackgroundImage from "../components/BackgroundImage.astro";
       <IntroSection>
         <h4>Nombre limité de billets visiteurs disponibles pour la journée et la soirée</h4>
         <section class="w-full flex flex-wrap">
-          <div class="w-1/2">
-            <h2>Informations</h2>
+          <HalfColumn>
+            <H2>Informations</H2>
             <p>
               Les visiteurs sont les bienvenus à l'ETDS à tout moment. Cela signifie que
               votre famille peut venir assister à la compétition. Vous pouvez
@@ -38,22 +40,22 @@ import BackgroundImage from "../components/BackgroundImage.astro";
                 être respecté.</strong
               >
             </p>
-          </div>
-          <div class="w-1/2">
-            <h2>Visiteurs de Jour</h2>
+          </HalfColumn>
+          <HalfColumn>
+            <H2>Visiteurs de Jour</H2>
             <p>
               Les visiteurs de jour sont les bienvenus pendant le tournoi pour venir
               encourager leurs amis et leur famille. La journée s'étend de 8h30 jusqu'à
               la fin du tournoi, généralement vers 19h30.
             </p>
-            <h2>Visiteurs de Soirée</h2>
+            <H2>Visiteurs de Soirée</H2>
             <p>
               Les visiteurs de soirée sont les bienvenus pendant les soirées pour
               danser et assister à tous les spectacles. Vous pouvez danser du début
               de la soirée jusqu'au petit matin.<br />
               <strong>Pour les horaires exacts par jour, consultez le programme.</strong>
             </p>
-            <h2>Nourriture et Boissons</h2>
+            <H2>Nourriture et Boissons</H2>
             <p>
               La nourriture et les boissons ne sont pas incluses dans le prix d'entrée.
               Cependant, vous pouvez acheter à manger et à boire dans les restaurants
@@ -66,9 +68,9 @@ import BackgroundImage from "../components/BackgroundImage.astro";
               <br />
               Il est strictement interdit de commander de la nourriture à livrer sur le site.
             </p>
-          </div>
-          <div class="w-1/2">
-            <h2>Inscription et Paiement</h2>
+          </HalfColumn>
+          <HalfColumn>
+            <H2>Inscription et Paiement</H2>
             <p>
               <strong
                 >Veuillez vous inscrire via le formulaire visiteur si vous souhaitez
@@ -86,63 +88,9 @@ import BackgroundImage from "../components/BackgroundImage.astro";
               incluses et peuvent être achetées au bar. L'email de confirmation
               contiendra les détails du paiement.
             </p>
-          </div>
+          </HalfColumn>
         </section>
       </IntroSection>
     </main>
   </div>
 </Layout>
-  <style>
-    section h3 {
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: var(--color-primary);
-      margin-top: 1.8rem;
-      margin-bottom: 0.8rem;
-      letter-spacing: 0.01em;
-      text-align: left;
-    }
-    section {
-      font-size: 0.91rem;
-    }
-    section div {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-    section h2 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      color: var(--color-primary);
-      margin-top: 2.2rem;
-      margin-bottom: 1rem;
-      letter-spacing: 0.01em;
-      text-align: left;
-    }
-
-    section ul {
-      list-style-type: square;
-      padding-left: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    section ul li {
-      color: inherit;
-      font-size: 0.97rem;
-    }
-    section ul li::marker {
-      color: var(--color-secondary);
-    }
-    section ul ul {
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-      padding-left: 1.5rem;
-    }
-    section ul li strong {
-      color: var(--color-primary);
-    }
-
-    section p {
-      margin-bottom: 1.2rem;
-      line-height: 1.6;
-      text-align: left;
-    }
-  </style>

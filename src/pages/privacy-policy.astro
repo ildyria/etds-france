@@ -2,6 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import BackgroundImage from "../components/BackgroundImage.astro";
 import Hero from "../components/Hero.astro";
+import HalfColumn from "../components/HalfColumn.astro";
+import H2 from "../components/H2.astro";
+import UL from "../components/UL.astro";
+import H3 from "../components/H3.astro";
 ---
 
 <Layout>
@@ -27,8 +31,8 @@ import Hero from "../components/Hero.astro";
       </section>
 
       <section class="w-full flex flex-wrap">
-        <div class="w-1/2">
-          <h2>Qui sommes-nous ?</h2>
+        <HalfColumn>
+          <H2>Qui sommes-nous ?</H2>
           <p>
             Nous sommes l'organisation de l'European Tournament for Dancing
             Students (ETDS). L'ETDS est un tournoi de danse de salon
@@ -41,12 +45,12 @@ import Hero from "../components/Hero.astro";
             organis&eacute; par l'association Unitanz Aachen et des membres
             externes.
           </p>
-          <h2>Quelles informations personnelles collectons-nous ?</h2>
+          <H2>Quelles informations personnelles collectons-nous ?</H2>
           <p class="mb-0!">
             Nous collecterons les informations personnelles suivantes pour
             chaque participant&nbsp;:
           </p>
-          <ul>
+          <UL>
             <li>Nom</li>
             <li>Adresse e-mail</li>
             <li>Statut &eacute;tudiant ou non</li>
@@ -56,44 +60,44 @@ import Hero from "../components/Hero.astro";
               Informations relatives &agrave; votre participation et
               h&eacute;bergement
             </li>
-          </ul>
+          </UL>
 
-          <h2>Qui a acc&egrave;s &agrave; vos informations ?</h2>
+          <H2>Qui a acc&egrave;s &agrave; vos informations ?</H2>
           <p>
             Vos donn&eacute;es ne seront pas partag&eacute;es avec des tiers.
             Les personnes suivantes auront acc&egrave;s &agrave; vos
             informations personnelles&nbsp;:
           </p>
 
-          <h3>L'organisation de l'ETDS</h3>
+          <H3>L'organisation de l'ETDS</H3>
           <p>
             L'acc&egrave;s &agrave; vos informations personnelles sera fourni
             &agrave; un petit nombre de personnes qui ont besoin de ces
             informations pour organiser le tournoi.
           </p>
-          <h3>Votre capitaine d'&eacute;quipe</h3>
+          <H3>Votre capitaine d'&eacute;quipe</H3>
           <p>
             Votre propre capitaine d'&eacute;quipe a acc&egrave;s &agrave;
             toutes les informations que vous partagez, car c'est lui/elle qui
             vous inscrit au tournoi.
           </p>
-          <h3>Où mes informations seront-elles enregistr&eacute;es ?</h3>
+          <H3>Où mes informations seront-elles enregistr&eacute;es ?</H3>
           <p>
             Les informations d'inscription seront enregistr&eacute;es sur les
             serveurs du fournisseur d'h&eacute;bergement TransIP BV aux
             Pays-Bas. Le fournisseur d'h&eacute;bergement n'a pas acc&egrave;s
             &agrave; vos donn&eacute;es.
           </p>
-        </div>
-        <div class="w-1/2">
-          <h2>Modifier mes informations</h2>
+        </HalfColumn>
+        <HalfColumn>
+          <H2>Modifier mes informations</H2>
           <p>
             Vous pouvez demander &agrave; votre capitaine d'&eacute;quipe de
             modifier toute information incorrecte.
           </p>
-          <h2>
+          <H2>
             Combien de temps mes informations seront-elles conserv&eacute;es ?
-          </h2>
+          </H2>
           <p>
             Vos informations seront conserv&eacute;es au moins jusqu'&agrave; la
             fin du tournoi. Par la suite, votre nom et vos r&eacute;sultats
@@ -103,9 +107,9 @@ import Hero from "../components/Hero.astro";
             utilis&eacute;es de mani&egrave;re anonyme pour des analyses
             statistiques ou être supprim&eacute;es.
           </p>
-          <h2>
+          <H2>
             Toutes mes informations peuvent-elles être supprim&eacute;es ?
-          </h2>
+          </H2>
           <p>
             Les organisateurs peuvent d&eacute;cider d'accorder aux participants
             qui participent pour la premi&egrave;re fois un avantage dans le
@@ -116,7 +120,7 @@ import Hero from "../components/Hero.astro";
             supprim&eacute;es comme expliqu&eacute; dans la section
             pr&eacute;c&eacute;dente.
           </p>
-          <h2>Contenu publi&eacute; en ligne</h2>
+          <H2>Contenu publi&eacute; en ligne</H2>
           <p>
             Apr&egrave;s le tournoi, les noms et r&eacute;sultats des
             participants seront publi&eacute;s sur les sites web avec les
@@ -126,62 +130,8 @@ import Hero from "../components/Hero.astro";
             r&eacute;seaux sociaux. La suppression de ces photos se fait sur
             demande.
           </p>
-        </div>
+        </HalfColumn>
       </section>
     </main>
   </div>
 </Layout>
-
-<style>
-  section h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-primary);
-    margin-top: 0.5rem;
-    margin-bottom: 0rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-  section {
-    font-size: 0.91rem;
-  }
-  section div {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  section h2 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-top: 2.2rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-
-  section ul {
-    list-style-type: square;
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  section ul li {
-    color: inherit;
-    font-size: 0.97rem;
-  }
-  section ul li::marker {
-    color: var(--color-secondary);
-  }
-  section ul ul {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding-left: 1.5rem;
-  }
-  section ul li strong {
-    color: var(--color-primary);
-  }
-
-  section p {
-    margin-bottom: 1.2rem;
-    line-height: 1.6;
-  }
-</style>

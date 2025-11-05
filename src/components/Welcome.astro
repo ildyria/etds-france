@@ -4,7 +4,7 @@ import background from "../assets/background.svg";
 
 <div id="container">
   <img id="background" src={background.src} alt="" fetchpriority="high" />
-  <main>
+  <main class="md:p-2">
     <section id="hero">
       <div class="logo">
         <h1 class="title">ETDS &mdash; &Eacute;quipe France</h1>
@@ -17,21 +17,44 @@ import background from "../assets/background.svg";
       </p>
       <section id="links">
         <a class="button" href="#about">En savoir plus</a>
-        <a class="button secondary" href="#contact">Rejoindre l'&eacute;quipe</a>
+        <a class="button secondary" href="#contact">Rejoindre l'&eacute;quipe</a
+        >
       </section>
     </section>
 
     <section id="about" class="content-section">
       <h2>L'ETDS, c'est quoi?</h2>
-      <p>
+      <p class="pb-4">
         L'European Tournament for Dancing Students (ETDS) est un événement
         bi-annuel qui réunit des étudiants danseurs de toute l'Europe. L'ETDS se
         déroule deux fois par an :<br />
         <strong>pendant la Pentecôte</strong> et <strong>mi-octobre</strong>.
       </p>
+      <p class="pb-4">
+        Chaque édition de l'ETDS est organis&eacute;e par une &eacute;quipe
+        universitaire diff&eacute;rente. Imagine un week-end o&ugrave; <strong
+          >plus de 600 danseurs de tout niveaux</strong
+        > se rassemblent pour participer &agrave; deux competitions, une en danse
+        standard et une en danse latine, tout en profitant d'une atmosph&egrave;re
+        conviviale et festive.
+      </p>
+      <p class="pb-4">
+        La <strong>piste de danse</strong> est l'une des <strong
+          >plus grande d'Europe</strong
+        >, de taille comparables &agrave; celles des tournois comme Wuppertal ou
+        Blackpool. En plus des comp&eacute;titions, tous le samedi et dimanche
+        soir (et toute la nuit pour les plus courageux !), la musique continue.
+        Offrant des opportunit&eacute;s uniques de rencontrer et danser avec des
+        &eacute;tudiants venus de toute l'Europe.
+      </p>
+      <section id="links" class="flex justify-center">
+        <a class="button" href="/photos-viodes">Voir les photos et videos</a>
+      </section>
+
     </section>
 
     <section id="features" class="content-section">
+      <h2>En quelque mots</h2>
       <div class="features-grid">
         <div class="feature-card">
           <div class="icon">🎭</div>
@@ -54,9 +77,10 @@ import background from "../assets/background.svg";
 
   <div id="contact" class="box">
     <h2>Nous contacter</h2>
-    <p></p> Pour plus d'informations sur l'ETDS - &Eacute;quipe France, contactez-nous
-    par email &agrave; <a href="mailto:beviguier@gmail.com">beviguier@gmail.com</a> ou sur instagram (<a href="http://instagram.com/phd.dance"
-      >@phd.dance</a
+    <p></p> Pour plus d'informations sur l'ETDS - <a href="/the-team">&Eacute;quipe France</a>, contactez-nous
+    par email &agrave; <a href="mailto:beviguier@gmail.com"
+      >beviguier@gmail.com</a
+    > ou sur instagram (<a href="http://instagram.com/phd.dance">@phd.dance</a
     >).
   </div>
 </div>
@@ -83,7 +107,6 @@ import background from "../assets/background.svg";
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
   }
 
   #hero {

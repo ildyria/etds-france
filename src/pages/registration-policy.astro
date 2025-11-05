@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import BackgroundImage from "../components/BackgroundImage.astro";
 import Hero from "../components/Hero.astro";
+import UL from "../components/UL.astro";
+import H2 from "../components/H2.astro";
+import HalfColumn from "../components/HalfColumn.astro";
 ---
 
 <Layout>
@@ -12,7 +15,7 @@ import Hero from "../components/Hero.astro";
       <Hero title="Politique d’inscription" />
 
       <section>
-        <p class="mx-auto w-3/4 text-justify">
+        <p class="mx-auto w-full md:w-3/4 text-justify">
           En vous inscrivant à l’European Tournament for Dancing Students (ETDS)
           en tant que participant, capitaine d’équipe, juge ou bénévole, vous
           acceptez la présente politique d’inscription. Cette politique vous
@@ -54,8 +57,8 @@ import Hero from "../components/Hero.astro";
       </section>
 
       <section class="w-full flex flex-wrap">
-        <div class="w-1/2">
-          <h2>Généralités</h2>
+        <HalfColumn>
+          <H2>Généralités</H2>
           <p>
             En s’inscrivant, chaque participant déclare au comité de l’ETDS
             accepter le règlement d’inscription, le règlement de compétition et
@@ -72,7 +75,7 @@ import Hero from "../components/Hero.astro";
             l’accès à l’événement.
           </p>
 
-          <h2>Procédure d’inscription</h2>
+          <H2>Procédure d’inscription</H2>
           <p>
             Les inscriptions ouvrent le 8&nbsp;août. Si le nombre d’inscriptions
             dépasse le nombre de places, les participants sont sélectionnés par
@@ -102,12 +105,12 @@ import Hero from "../components/Hero.astro";
             système d’inscription et sont exemptés du tirage au sort. Le nombre
             de capitaines d’équipe exemptés est le suivant&nbsp;:
           </p>
-          <ul>
+          <UL>
             <li>1 pour 3&nbsp;participants ou plus (hors capitaine)</li>
             <li>2 pour 20&nbsp;participants ou plus (hors capitaines)</li>
-          </ul>
+          </UL>
 
-          <h2>Annulations</h2>
+          <H2>Annulations</H2>
           <p>
             Une semaine après la clôture des inscriptions, le capitaine
             d’équipe recevra une liste finale des participants avec une liste
@@ -118,7 +121,7 @@ import Hero from "../components/Hero.astro";
             de la liste d’attente. Le système conserve les priorités
             suivantes&nbsp;:
           </p>
-          <ul>
+          <UL>
             <li>
               La place est attribuée à un participant de la liste d’attente de
               n’importe quelle équipe, par tirage aléatoire effectué par
@@ -138,11 +141,11 @@ import Hero from "../components/Hero.astro";
               capitaine d’équipe. Le participant pourra alors être retiré du
               système de tirage au sort.
             </li>
-          </ul>
-        </div>
+          </UL>
+        </HalfColumn>
 
-        <div class="w-1/2">
-          <h2>Finances</h2>
+        <HalfColumn>
+          <H2>Finances</H2>
           <p>
             Les paiements suite aux résultats du grand tirage doivent être
             reçus au plus tard le 16&nbsp;septembre. Si des places ne sont pas
@@ -158,11 +161,11 @@ import Hero from "../components/Hero.astro";
             Pour les frais d’inscription, une distinction est faite entre
             étudiants, doctorants et non-étudiants&nbsp;:
           </p>
-          <ul>
+          <UL>
             <li>Étudiants&nbsp;: 95&nbsp;€</li>
             <li>Doctorants&nbsp;: 120&nbsp;€</li>
             <li>Non-étudiants&nbsp;: 120&nbsp;€</li>
-          </ul>
+          </UL>
 
           <p>
             Si un membre inscrit passe de la liste d’attente à la liste des
@@ -174,9 +177,9 @@ import Hero from "../components/Hero.astro";
             Si l’ETDS a lieu avant la date limite de paiement, les frais de
             participation doivent être réglés avant le début de l’événement.
           </p>
-          <h2>Remboursement des frais de participation&nbsp;:</h2>
+          <H2>Remboursement des frais de participation&nbsp;:</H2>
           <p class="mb-0!">Pour un aperçu clair, voir le schéma ci-dessus.</p>
-          <ul>
+          <UL>
             <li>
               Un participant obtient un remboursement intégral s’il annule
               avant le 23&nbsp;septembre et si la place peut être pourvue. Le
@@ -193,7 +196,7 @@ import Hero from "../components/Hero.astro";
               Si la place ne peut pas être pourvue ou si le participant n’annule
               pas avant le début de l’ETDS, aucun remboursement n’est accordé.
             </li>
-          </ul>
+          </UL>
           <p>
             Il est attendu des associations qu’elles veillent à ce que les
             remboursements reviennent à la personne à qui ils appartiennent. Les
@@ -209,7 +212,7 @@ import Hero from "../components/Hero.astro";
             sera pas acceptée comme preuve d’inscription.
           </p>
 
-          <h2>Heures d’aide obligatoires</h2>
+          <H2>Heures d’aide obligatoires</H2>
           <p>
             Pendant l’ETDS d’octobre&nbsp;2025, chaque équipe doit remplir des
             heures d’aide obligatoires (OHH). Plus d’informations sur ces
@@ -219,7 +222,7 @@ import Hero from "../components/Hero.astro";
           <p class="mb-0!">
             Les tâches pour les OHH peuvent inclure, sans s’y limiter&nbsp;:
           </p>
-          <ul>
+          <UL>
             <li>Accueil</li>
             <li>Bureau d’information</li>
             <li>Veille de nuit</li>
@@ -227,20 +230,20 @@ import Hero from "../components/Hero.astro";
             <li>Montage et démontage</li>
             <li>Aide au service du dîner</li>
             <li>Service au bar</li>
-          </ul>
+          </UL>
 
-          <h2>Dommages</h2>
+          <H2>Dommages</H2>
           <p class="mb-0!">
             Les dommages causés par la négligence des participants ou par leur
             non-respect des règles seront imputés aux dits participants. Cela
             inclut, sans s’y limiter, les dommages causés par&nbsp;:
           </p>
-          <ul>
+          <UL>
             <li>Fumer (/ vapoter)</li>
             <li>Porter des chaussures d’extérieur dans des zones non autorisées</li>
             <li>Porter des talons hauts sans protège-talons</li>
-          </ul>
-        </div>
+          </UL>
+        </HalfColumn>
       </section>
     </main>
   </div>

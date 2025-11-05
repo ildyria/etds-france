@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import BackgroundImage from "../components/BackgroundImage.astro";
 import Hero from "../components/Hero.astro";
+import List from "../components/packing/List.astro";
+import Item from "../components/packing/Item.astro";
+import H2 from "../components/H2.astro";
 ---
 
 <Layout>
@@ -21,496 +24,167 @@ import Hero from "../components/Hero.astro";
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h2 class="font-bold text-primary text-xl mb-2">Vêtements</h2>
-            <ul class="packing-list">
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing1"
-                  class="accent-primary w-5 h-5"
+            <H2>Vêtements</H2>
+            <List>
+                <Item id="clothing1"
+                 label="Tenue pour la compétition Standard"
                 />
-                <label for="clothing1" class="flex-1 cursor-pointer"
-                  >Tenue pour la compétition Standard</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing2"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing2"
+                 label="Chaussures pour le Standard"
                 />
-                <label for="clothing2" class="flex-1 cursor-pointer"
-                  >Chaussures pour le Standard</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing3"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing3"
+                 label="Tenue pour la compétition Latine"
                 />
-                <label for="clothing3" class="flex-1 cursor-pointer"
-                  >Tenue pour la compétition Latine</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing4"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing4"
+                 label="Chaussures pour le Latin"
                 />
-                <label for="clothing4" class="flex-1 cursor-pointer"
-                  >Chaussures pour le Latin</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing5"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing5"
+                 label="Protège-talons (pour les dames)"
                 />
-                <label for="clothing5" class="flex-1 cursor-pointer"
-                  >Protège-talons (pour les dames)</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing6"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing6"
+                 label="Tenue pour danser le vendredi soir"
                 />
-                <label for="clothing6" class="flex-1 cursor-pointer"
-                  >Tenue pour danser le vendredi soir</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing7"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing7"
+                 label="Tenue sur le thème"
                 />
-                <label for="clothing7" class="flex-1 cursor-pointer"
-                  >Tenue sur le thème</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing8"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing8"
+                 label="Tenue de soirée"
                 />
-                <label for="clothing8" class="flex-1 cursor-pointer"
-                  >Tenue de soirée</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing9"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing9"
+                 label="Pyjama"
                 />
-                <label for="clothing9" class="flex-1 cursor-pointer"
-                  >Pyjama</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing10"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing10"
+                 label="Sous-vêtements, soutien-gorge"
                 />
-                <label for="clothing10" class="flex-1 cursor-pointer"
-                  >Sous-vêtements, soutien-gorge</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing11"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing11"
+                 label="Chaussettes/culottes"
                 />
-                <label for="clothing11" class="flex-1 cursor-pointer"
-                  >Chaussettes/culottes</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing12"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing12"
+                 label="Tenue décontractée pour encourager vos coéquipiers"
                 />
-                <label for="clothing12" class="flex-1 cursor-pointer"
-                  >Tenue décontractée pour encourager vos coéquipiers</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing13"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing13"
+                 label="Tenue normale si vous voulez sortir en ville"
                 />
-                <label for="clothing13" class="flex-1 cursor-pointer"
-                  >Tenue normale si vous voulez sortir en ville</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="clothing14"
-                  class="accent-primary w-5 h-5"
+                <Item id="clothing14"
+                 label="Chaussons, tongs, mocassins, tout ce qui est confortable"
                 />
-                <label for="clothing14" class="flex-1 cursor-pointer"
-                  >Chaussons, tongs, mocassins, tout ce qui est confortable</label
-                >
-              </li>
-            </ul>
+            </List>
 
-            <h2 class="font-bold text-primary text-xl mt-6 mb-2">
+            <H2>
               Affaires pour dormir
-            </h2>
-            <ul class="packing-list">
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="sleep1"
-                  class="accent-primary w-5 h-5"
+            </H2>
+            <List>
+                <Item id="sleep1"
+                 label="Matelas gonflable"
                 />
-                <label for="sleep1" class="flex-1 cursor-pointer"
-                  >Matelas gonflable</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="sleep2"
-                  class="accent-primary w-5 h-5"
+                <Item id="sleep2"
+                 label="Pompe pour matelas gonflable"
                 />
-                <label for="sleep2" class="flex-1 cursor-pointer">Pompe</label>
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="sleep3"
-                  class="accent-primary w-5 h-5"
+                <Item id="sleep3"
+                 label="Sac de couchage ou couverture"
                 />
-                <label for="sleep3" class="flex-1 cursor-pointer"
-                  >Sac de couchage ou couverture</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="sleep4"
-                  class="accent-primary w-5 h-5"
+                <Item id="sleep4"
+                 label="Oreiller"
                 />
-                <label for="sleep4" class="flex-1 cursor-pointer"
-                  >Oreiller</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="sleep5"
-                  class="accent-primary w-5 h-5"
+                <Item id="sleep5"
+                 label="Bouchons d'oreilles"
                 />
-                <label for="sleep5" class="flex-1 cursor-pointer"
-                  >Bouchons d'oreilles</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="sleep6"
-                  class="accent-primary w-5 h-5"
+                <Item id="sleep6"
+                 label="Masque de nuit"
                 />
-                <label for="sleep6" class="flex-1 cursor-pointer"
-                  >Masque de nuit</label
-                >
-              </li>
-            </ul>
+            </List>
           </div>
           <div>
-            <h2 class="font-bold text-primary text-xl mb-2">
+            <H2>
               Affaires de toilette
-            </h2>
-            <ul class="packing-list">
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries1"
-                  class="accent-primary w-5 h-5"
+            </H2>
+            <List>
+                <Item id="toiletries1"
+                 label="Serviette(s)"
                 />
-                <label for="toiletries1" class="flex-1 cursor-pointer"
-                  >Serviette(s)</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries2"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries2"
+                 label="Gel douche, shampoing, après-shampoing"
                 />
-                <label for="toiletries2" class="flex-1 cursor-pointer"
-                  >Gel douche, shampoing, après-shampoing</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries3"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries3"
+                 label="Déodorant"
                 />
-                <label for="toiletries3" class="flex-1 cursor-pointer"
-                  >Déodorant</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries4"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries4"
+                 label="Brosse à dents"
                 />
-                <label for="toiletries4" class="flex-1 cursor-pointer"
-                  >Brosse à dents</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries5"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries5"
+                 label="Dentifrice"
                 />
-                <label for="toiletries5" class="flex-1 cursor-pointer"
-                  >Dentifrice</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries6"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries6"
+                 label="Lunettes/lentilles (n'oubliez pas le liquide)"
                 />
-                <label for="toiletries6" class="flex-1 cursor-pointer"
-                  >Lunettes/lentilles (n'oubliez pas le liquide)</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries7"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries7"
+                 label="Brosse à cheveux"
                 />
-                <label for="toiletries7" class="flex-1 cursor-pointer"
-                  >Brosse à cheveux</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries8"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries8"
+                 label="Gel/laque/autres produits pour coiffer vos cheveux"
                 />
-                <label for="toiletries8" class="flex-1 cursor-pointer"
-                  >Gel/laque/autres produits pour coiffer vos cheveux</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries9"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries9"
+                 label="Maquillage"
                 />
-                <label for="toiletries9" class="flex-1 cursor-pointer"
-                  >Maquillage</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries10"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries10"
+                 label="Démaquillant"
                 />
-                <label for="toiletries10" class="flex-1 cursor-pointer"
-                  >Démaquillant</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries11"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries11"
+                 label="Kit de rasage"
                 />
-                <label for="toiletries11" class="flex-1 cursor-pointer"
-                  >Kit de rasage</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries12"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries12"
+                 label="Miroir"
                 />
-                <label for="toiletries12" class="flex-1 cursor-pointer"
-                  >Miroir</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="toiletries13"
-                  class="accent-primary w-5 h-5"
+                <Item id="toiletries13"
+                 label="Médicaments (n'oubliez pas les pansements pour ampoules)"
                 />
-                <label for="toiletries13" class="flex-1 cursor-pointer"
-                  >Médicaments (n'oubliez pas les pansements pour ampoules)</label
-                >
-              </li>
-            </ul>
+            </List>
 
-            <h2 class="font-bold text-primary text-xl mt-6 mb-2">Autre</h2>
-            <ul class="packing-list">
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other1"
-                  class="accent-primary w-5 h-5"
+            <H2>Autre</H2>
+            <List>
+                <Item id="other1"
+                 label="Assiette, tasse, bol pour la soupe (compatible lave-vaisselle)"
                 />
-                <label for="other1" class="flex-1 cursor-pointer"
-                  >Assiette, tasse, bol pour la soupe (compatible
-                  lave-vaisselle)</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other2"
-                  class="accent-primary w-5 h-5"
+                <Item id="other2"
+                 label="Couverts : cuillère, fourchette, couteau (compatible lave-vaisselle)"
                 />
-                <label for="other2" class="flex-1 cursor-pointer"
-                  >Couverts : cuillère, fourchette, couteau (compatible
-                  lave-vaisselle)</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other3"
-                  class="accent-primary w-5 h-5"
+                <Item id="other3"
+                 label="Mug à thé ou café (compatible lave-vaisselle)"
                 />
-                <label for="other3" class="flex-1 cursor-pointer"
-                  >Mug à thé ou café (compatible lave-vaisselle)</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other4"
-                  class="accent-primary w-5 h-5"
+                <Item id="other4"
+                 label="Carte bancaire (pour les boissons)"
                 />
-                <label for="other4" class="flex-1 cursor-pointer"
-                  >Carte bancaire (pour les boissons)</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other5"
-                  class="accent-primary w-5 h-5"
+                <Item id="other5"
+                 label="Carte d'identité ou passeport"
                 />
-                <label for="other5" class="flex-1 cursor-pointer"
-                  >Carte d'identité ou passeport</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other6"
-                  class="accent-primary w-5 h-5"
+                <Item id="other6"
+                 label="Carte étudiante (avec justificatif d'inscription)"
                 />
-                <label for="other6" class="flex-1 cursor-pointer"
-                  >Carte étudiante (avec justificatif d'inscription)</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other7"
-                  class="accent-primary w-5 h-5"
+                <Item id="other7"
+                 label="Téléphone"
                 />
-                <label for="other7" class="flex-1 cursor-pointer"
-                  >Téléphone</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other8"
-                  class="accent-primary w-5 h-5"
+                <Item id="other8"
+                 label="Chargeur de téléphone"
                 />
-                <label for="other8" class="flex-1 cursor-pointer"
-                  >Chargeur de téléphone</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other9"
-                  class="accent-primary w-5 h-5"
+                <Item id="other9"
+                 label="Rallonge électrique (optionnel)"
                 />
-                <label for="other9" class="flex-1 cursor-pointer"
-                  >Rallonge électrique (optionnel)</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other10"
-                  class="accent-primary w-5 h-5"
+                <Item id="other10"
+                 label="Matériel pour encourager l'équipe"
                 />
-                <label for="other10" class="flex-1 cursor-pointer"
-                  >Matériel pour encourager l'équipe</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other11"
-                  class="accent-primary w-5 h-5"
+                <Item id="other11"
+                 label="Appareil photo"
                 />
-                <label for="other11" class="flex-1 cursor-pointer"
-                  >Appareil photo</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other12"
-                  class="accent-primary w-5 h-5"
+                <Item id="other12"
+                 label="Lampe de poche"
                 />
-                <label for="other12" class="flex-1 cursor-pointer"
-                  >Lampe de poche</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other13"
-                  class="accent-primary w-5 h-5"
+                <Item id="other13"
+                 label="Bonne humeur, énergie et enthousiasme débordant !"
                 />
-                <label for="other13" class="flex-1 cursor-pointer"
-                  >Bonne humeur, énergie et enthousiasme débordant !</label
-                >
-              </li>
-              <li class="flex items-center gap-3 py-1">
-                <input
-                  type="checkbox"
-                  id="other14"
-                  class="accent-primary w-5 h-5"
+                <Item id="other14"
+                 label="Brosse pour vos chaussures de danse"
                 />
-                <label for="other14" class="flex-1 cursor-pointer"
-                  >Brosse pour vos chaussures de danse</label
-                >
-              </li>
-            </ul>
+            </List>
           </div>
         </div>
       </section>
@@ -539,41 +213,3 @@ import Hero from "../components/Hero.astro";
     });
   }
 </script>
-
-<style>
-  .packing-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .packing-list li {
-    border-radius: 0.5rem;
-    transition: background 0.2s;
-  }
-  .packing-list li:hover {
-    font-weight: bold;
-    color: var(--color-primary);
-  }
-  .packing-list input[type="checkbox"] {
-    accent-color: var(--color-primary);
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.5rem;
-    vertical-align: middle;
-  }
-  .packing-list label {
-    font-size: 1rem;
-    line-height: 1.5;
-    cursor: pointer;
-    user-select: none;
-  }
-  @media (max-width: 768px) {
-    .packing-list label {
-      font-size: 0.95rem;
-    }
-    .packing-list input[type="checkbox"] {
-      width: 1rem;
-      height: 1rem;
-    }
-  }
-</style>

@@ -6,6 +6,7 @@ import Layout from "../layouts/Layout.astro";
 import BackgroundImage from "../components/BackgroundImage.astro";
 import AccordionContainer from "../components/AccordionContainer.astro";
 import AccordionItem from "../components/AccordionItem.astro";
+import UL from "../components/UL.astro";
 ---
 
 <Layout>
@@ -127,11 +128,11 @@ import AccordionItem from "../components/AccordionItem.astro";
             header="La nourriture est-elle incluse ? Et les boissons ? Et les régimes alimentaires ?"
           >
             La nourriture qui sera fournie :
-            <ul class="marker:text-secondary text-left list-[square] list-inside mb-2">
+            <UL>
               <li>Brunch et dîner le samedi</li>
               <li>Brunch et dîner le dimanche</li>
               <li>Petit-déjeuner le lundi</li>
-            </ul>
+            </UL>
             Le menu exact pour le déjeuner et le dîner sera publié sur notre site
             au moins une semaine avant le début de l'ETDS. Pendant le petit-déjeuner
             et le déjeuner, des boissons comme du lait, du café et du thé seront
@@ -309,7 +310,7 @@ import AccordionItem from "../components/AccordionItem.astro";
             <strong
               >Quelques conseils d'un danseur expérimenté aux débutants :</strong
             >
-            <ul class="marker:text-secondary text-left list-[square] list-inside mb-2">
+            <UL>
               <li>
                 Ne pensez pas trop à la technique sur la piste, il est déjà trop
                 tard à ce moment-là
@@ -330,7 +331,7 @@ import AccordionItem from "../components/AccordionItem.astro";
                 recommencez. Il n'y a pas de mal à ça !
               </li>
               <li>Le plus important : <strong>amusez-vous !</strong></li>
-            </ul>
+            </UL>
           </AccordionItem>
         </AccordionContainer>
       </ContentSection>
