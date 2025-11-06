@@ -7,7 +7,7 @@ interface Props extends HTMLAttributes<"div"> {}
 const { class: className, ...attrs } = Astro.props;
 ---
 <div
-    class={twMerge('w-3/4 mx-auto text-left', className)}
+    class={twMerge('md:w-3/4 mx-auto text-left', className)}
     {...attrs}>
     <slot />
 </div>

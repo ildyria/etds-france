@@ -15,8 +15,8 @@ import ThreeQuartColumn from "../components/ThreeQuartColumn.astro";
     <main class="max-w-4xl!">
       <Hero title="Les classes" />
 
-      <section>
-        <p class="mx-auto w-3/4 text-center!">
+      <section class="px-6 text-sm md:text-base">
+        <p class="mx-auto md:w-3/4 text-center!">
           L'ETDS comprend deux catégories principales : Breitensport et ClOpen
           (CloseD-Open). Votre catégorie dépend de votre expérience préalable en
           compétitions.
@@ -33,7 +33,7 @@ import ThreeQuartColumn from "../components/ThreeQuartColumn.astro";
         </p>
       </section>
 
-      <section>
+      <section class="px-6 text-sm md:text-base">
         <H2 class="text-center!">Vue d'ensemble</H2>
         <ThreeQuartColumn>
           <p class="text-center!">
@@ -52,7 +52,12 @@ import ThreeQuartColumn from "../components/ThreeQuartColumn.astro";
             Dans ce cas, votre capitaine d'équipe doit nous contacter.
           </p>
         </ThreeQuartColumn>
-        <img src="/Classes_2025_wB.png" />
+        <p class="text-center">
+          <a href="/Classes_2025_wB.png">
+            <img src="/Classes_2025_wB.png" />
+            <small class="text-p">Cliquez pour agrandir</small>
+          </a>
+        </p>
       </section>
 
       <section class="w-full flex flex-wrap">
@@ -60,7 +65,7 @@ import ThreeQuartColumn from "../components/ThreeQuartColumn.astro";
           <H2>Breitensport</H2>
           <p class="mb-0!">
             Sur la base de plusieurs tours de qualification, le Breitensport
-            sera divisé en 6 classes au total :
+            sera divisé en 6 classes au total&nbsp;:
           </p>
           <UL>
             <li>Enthusiasts</li>
@@ -117,7 +122,7 @@ import ThreeQuartColumn from "../components/ThreeQuartColumn.astro";
             blind dating. Ce tirage détermine pour chaque tour et pour chaque
             danse avec quel(le) partenaire vous danserez. Sur la base de
             plusieurs tours de qualification, le ClOpen sera divisé en 2 classes
-            au total :
+            au total&nbsp;:
           </p>
           <UL>
             <li>CloseD</li>

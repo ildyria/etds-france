@@ -1,122 +1,121 @@
 ---
 const { header } = Astro.props;
 ---
+
 <div class="accordion-item">
-  <button class="accordion-header">
+  <button
+    class="accordion-header text-base text-primary font-semibold md:text-xl"
+  >
     {header}
     <span class="accordion-icon">▼</span>
   </button>
   <div class="accordion-content">
-    <div class="accordion-body">
+    <div class="accordion-body text-sm md:text-base">
       <slot />
     </div>
   </div>
 </div>
 
 <style>
-	.accordion-item {
-		background: rgba(255, 255, 255, 0.95);
-		border-radius: 0;
-		overflow: hidden;
-		box-shadow: 0 2px 8px rgba(0, 85, 164, 0.1);
-		transition: box-shadow 0.3s;
-	}
+  .accordion-item {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 85, 164, 0.1);
+    transition: box-shadow 0.3s;
+  }
 
-	.accordion-item:first-child {
-		border-radius: 12px 12px 0 0;
-	}
+  .accordion-item:first-child {
+    border-radius: 12px 12px 0 0;
+  }
 
-	.accordion-item:last-child {
-		border-radius: 0 0 12px 12px;
-	}
+  .accordion-item:last-child {
+    border-radius: 0 0 12px 12px;
+  }
 
-	.accordion-item:hover {
-		box-shadow: 0 4px 15px rgba(0, 85, 164, 0.15);
-	}
+  .accordion-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 85, 164, 0.15);
+  }
 
-	.accordion-header {
-		width: 100%;
-		padding: 0.75rem 1.25rem;
-		background: transparent;
-		border: none;
-		text-align: left;
-		cursor: pointer;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		font-size: 1.2rem;
-		font-weight: 600;
-			color: var(--color-primary);
-		transition: background 0.3s;
-	}
+  .accordion-header {
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    background: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+  }
 
-	.accordion-header:hover {
-		background: rgba(0, 85, 164, 0.05);
-	}
+  .accordion-header:hover {
+    background: rgba(0, 85, 164, 0.05);
+  }
 
-	.accordion-icon {
-	font-size: 0.8rem;
-		transition: transform 0.3s;
-		color: #EF4135;
-	}
+  .accordion-icon {
+    font-size: 0.8rem;
+    transition: transform 0.3s;
+    color: #ef4135;
+  }
 
-	.accordion-item.active .accordion-icon {
-		transform: rotate(180deg);
-	}
+  .accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+  }
 
-	.accordion-content {
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.3s ease-out;
-	}
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
 
-	.accordion-item.active .accordion-content {
-		max-height: 1000px;
-		transition: max-height 0.5s ease-in;
-	}
+  .accordion-item.active .accordion-content {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+  }
 
-	.accordion-body {
-	padding: 0.5rem 1.5rem 1.5rem;
-	color: #4b5563;
-	font-size: 1.1rem;
-	line-height: 1.4;
-	}
+  .accordion-body {
+    padding: 0.5rem 1.5rem 1.5rem;
+    color: #4b5563;
+    line-height: 1.4;
+  }
 
-	.accordion-body ul {
-		margin: 0.5rem 0;
-		padding-left: 1.5rem;
-		list-style: none;
-	}
+  .accordion-body ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    list-style: none;
+  }
 
-	.accordion-body li {
-		margin-bottom: 0.3rem;
-		line-height: 1.3;
-		position: relative;
-		padding-left: 1.5rem;
-	}
+  .accordion-body li {
+    margin-bottom: 0.3rem;
+    line-height: 1.3;
+    position: relative;
+    padding-left: 1.5rem;
+  }
 
-	.accordion-body li::before {
-		content: "\2022";
-		color: #EF4135;
-		font-weight: bold;
-		font-size: 1rem;
-		position: absolute;
-		left: 0;
-		top: 0.2em;
-	}
+  .accordion-body li::before {
+    content: "\2022";
+    color: #ef4135;
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+  }
 
-	.accordion-body li::before {
-		content: "•";
-		color: #EF4135;
-		font-weight: bold;
-		font-size: 1.3rem;
-		position: absolute;
-		left: 0;
-		top: -2px;
-	}
+  .accordion-body li::before {
+    content: "•";
+    color: #ef4135;
+    font-weight: bold;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
 
-	.accordion-body strong {
-			color: var(--color-primary);
-		font-weight: 600;
-	}
+  .accordion-body strong {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
 </style>

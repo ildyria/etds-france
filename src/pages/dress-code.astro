@@ -16,7 +16,7 @@ import UL from "../components/UL.astro";
       <Hero title="Code Vestimentaire" />
 
       <IntroSection>
-        <p>
+        <p class="text-base">
           Voici les règles concernant le code vestimentaire en vigueur lors des
           compétitions ETDS. Comme pour toutes les règles, le comité ETDS se
           réserve le droit de s'écarter des règles énoncées dans ce document
@@ -24,78 +24,76 @@ import UL from "../components/UL.astro";
           des doutes sur l'une de vos tenues, prévoyez des alternatives « sûres
           ».
         </p>
-        <section class="w-full flex flex-wrap">
-          <HalfColumn>
-            <H2>Vêtements</H2>
-            <p>
-              Il n'est pas permis de danser en tenues de compétition.<br />
-              <span class="text-muted text-sm">
-                (par exemple, queue-de-pie, costume de danse, chemise latine de
-                compétition ou robe de danse sur mesure)
-              </span>
-            </p>
-
-            <p>
-              Les paillettes, plumes et strass excessifs ne sont pas autorisés<br
-              />
-              <span class="text-muted"
-                >Ni sur les vêtements, ni dans les cheveux</span
-              >
-            </p>
-
-            <p>
-              Les accessoires à strass utilisés en danse de compétition ne sont
-              pas autorisés
-            </p>
-
-            <p class="mb-0!">
-              Les vêtements doivent <strong
-                >couvrir les fesses et la poitrine</strong
-              >
-              , y compris pendant la danse
-            </p>
-            <UL>
-              <li>non transparents, pas de couleur chair</li>
-              <li>applicable à tous les danseurs, quel que soit leur genre</li>
-            </UL>
-            <p class="mb-0!">
-              Les tenues de compétition ne sont pas autorisées. Les exceptions
-              sont :
-            </p>
-            <UL>
-              <li>Les gilets</li>
-              <li>Les pantalons de danse latine et standard</li>
-              <li>Les chemises à boutons conçues pour la danse</li>
-            </UL>
-          </div>
-          <HalfColumn>
-            <H2>Chaussures</H2>
-            <p>Les chaussures de danse sont obligatoires</p>
-
-            <p>
-              Les chaussures d'extérieur et les chaussures à semelles en
-              caoutchouc sont strictement interdites sur la piste de danse
-            </p>
-
-            <p>Les protège-talons sont obligatoires</p>
-
-            <p>
-              L'utilisation de paraffine ou d'huile sous vos chaussures est
-              interdite
-              <span class="text-muted"
-                >Nous fournirons des planches à gratter et des serviettes
-                humides en cas de sol glissant. Aucun autre outil n'est
-                autorisé.</span
-              >
-            </p>
-
-            <p class="text-primary">
-              Si vous choisissez d'ignorer les règles ci-dessus, vous pourrez
-              être tenu responsable des d&eacute;g&acirc;ts causés.
-            </p>
-          </div>
-        </section>
       </IntroSection>
+      <section class="w-full flex flex-wrap">
+        <HalfColumn>
+          <H2>Vêtements</H2>
+          <p>
+            Il n'est pas permis de danser en tenues de compétition.<br />
+            <span class="text-muted text-sm">
+              (par exemple, queue-de-pie, costume de danse, chemise latine de
+              compétition ou robe de danse sur mesure.)
+            </span>
+          </p>
+
+          <p>
+            Les paillettes, plumes et strass excessifs ne sont pas autorisés<br
+            />
+            <span class="text-muted"
+              >Ni sur les vêtements, ni dans les cheveux.</span
+            >
+          </p>
+
+          <p>
+            Les accessoires à strass utilisés en danse de compétition ne sont
+            pas autorisés.
+          </p>
+
+          <p class="mb-0!">
+            Les vêtements doivent <strong class="text-secondary"
+              >couvrir les fesses et la poitrine</strong
+            >, y compris pendant la danse.
+          </p>
+          <UL>
+            <li>non transparents, pas de couleur chair,</li>
+            <li>applicable à tous les danseurs, quel que soit leur genre.</li>
+          </UL>
+          <p class="mb-0!">
+            Les tenues de compétition ne sont pas autorisées. Les exceptions
+            sont :
+          </p>
+          <UL>
+            <li>Les gilets</li>
+            <li>Les pantalons de danse latine et standard</li>
+            <li>Les chemises à boutons conçues pour la danse</li>
+          </UL>
+        </HalfColumn>
+        <HalfColumn>
+          <H2>Chaussures</H2>
+          <p>Les chaussures de danse sont obligatoires.</p>
+
+          <p>
+            Les chaussures d'extérieur et les chaussures à semelles en
+            caoutchouc sont strictement interdites sur la piste de danse.
+          </p>
+
+          <p>Les protège-talons sont obligatoires.</p>
+
+          <p>
+            L'utilisation de paraffine ou d'huile sous vos chaussures est
+            interdite.<br />
+            <span class="text-muted"
+              >Nous fournirons des planches à gratter et des serviettes humides
+              en cas de sol glissant. Aucun autre outil n'est autorisé.</span
+            >
+          </p>
+
+          <p class="text-primary">
+            Si vous choisissez d'ignorer les règles ci-dessus, vous pourrez être
+            tenu responsable des d&eacute;g&acirc;ts causés.
+          </p>
+        </HalfColumn>
+      </section>
     </main>
   </div>
 </Layout>

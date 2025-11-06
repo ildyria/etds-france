@@ -14,7 +14,7 @@ import UL from "../components/UL.astro";
     <main class="max-w-5xl!">
       <Hero title="Le Blind Dating" />
 
-      <section class="flex w-full">
+      <section class="flex w-full flex-wrap">
         <HalfColumn>
           <p>
             Le Blind Dating signifie que vous trouvez un(e) partenaire de danse sur place le vendredi
@@ -45,7 +45,7 @@ import UL from "../components/UL.astro";
             inscrire en tant que couple.
           </p>
         </HalfColumn>
-        <div class="w-1/2" >
+        <HalfColumn>
           <H2 class="mt-0!">Règles du Blind Dating</H2>
           <p class="mb-0!">Les règles suivantes s'appliquent :</p>
           <UL>
@@ -55,7 +55,7 @@ import UL from "../components/UL.astro";
             <li>
               Les participants obligatoires au blind dating ont les restrictions suivantes :
               <!-- This is needed to preserve the layout. -->
-              <ul class="marker:text-secondary text-left list-[square] list-inside mb-2 ml-6 text-sm">
+              <ul class="marker:text-secondary text-left list-[square] list-inside mb-2 ml-4 md:ml-6 text-sm">
                 <li>
                   Vous ne pouvez pas faire de blind dating avec quelqu'un avec qui, au cours des 3 dernières années,
                   vous avez concouru (ETDS, NTDS, autre compétition, etc.) ou

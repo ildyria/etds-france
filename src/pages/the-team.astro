@@ -14,7 +14,7 @@ import HalfColumn from "../components/HalfColumn.astro";
     <main>
       <Hero title="L'Équipe France" />
 
-      <section>
+      <section class="px-6 mb-12 text-sm md:text-base">
         <ThreeQuartColumn>
           <H2>L'&Eacute;quipe France, c'est quoi ?</H2>
           <p>
@@ -31,12 +31,12 @@ import HalfColumn from "../components/HalfColumn.astro";
           </p>
         </ThreeQuartColumn>
       </section>
-      <section class="flex">
-        <HalfColumn class="pr-2!">
-          <img src="/capitaine.jpg" />
+      <section class="flex flex-wrap text-sm md:text-base">
+        <HalfColumn class="md:pr-2!">
+          <a href="/capitaine.jpg"><img src="/capitaine.jpg" /></a>
         </HalfColumn>
-        <HalfColumn class="pl-2!">
-          <H2 class="mt-0!">A propos du capitaine de l'&eacute;quipe</H2>
+        <HalfColumn class="md:pl-2!">
+          <H2 class="md:mt-0!">A propos du capitaine de l'&eacute;quipe</H2>
           <p>
             A moins que tu ne sois d&eacute;j&agrave; venu(e) &agrave; Rotterdam
             pour l'Holland Masters, ou que tu ai particip&eacute;(e) &agrave; un
@@ -70,67 +70,55 @@ import HalfColumn from "../components/HalfColumn.astro";
             > ou de m'envoyer un mail &agrave; <a
               href="mailto:beviguier@gmail.com">beviguier@gmail.com</a
             > si tu as des questions ou souhaites rejoindre l'&Eacute;quipe France
-            !<br />
+            !<br class="md:hidden" />
             (Et oui, c'est moi qui ai fait ce site web aussi 😉)
           </p>
         </HalfColumn>
       </section>
+
+      <section id="links" class="mt-24 text-center">
+        <div class="font-bold mb-4 px-4 max-w-xl mx-auto md:text-xl">
+          Tu es vendu?<br>Contacte le capitaine de l'&eacute;quipe et rejoins-nous
+          pour la prochaine &eacute;dition !
+        </div>
+        <a class="button secondary" href="/#contact">Rejoindre l'&eacute;quipe</a
+        >
+      </section>
+
     </main>
   </div>
 </Layout>
 
+
 <style>
-  section h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-primary);
-    margin-top: 1.8rem;
-    margin-bottom: 0.8rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-  section {
-    font-size: 0.91rem;
-    margin-bottom: 4rem;
-  }
-  section div {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  section h2 {
-    font-size: 1.25rem;
+  #links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 28px;
+    text-decoration: none;
+    transition: all 0.3s;
+    border-radius: 12px;
     font-weight: 600;
-    color: var(--color-primary);
-    margin-top: 2.2rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.01em;
-    text-align: left;
+    font-size: 1rem;
   }
 
-  section ul {
-    list-style-type: square;
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  section ul li {
-    color: inherit;
-    font-size: 0.97rem;
-  }
-  section ul li::marker {
-    color: var(--color-secondary);
-  }
-  section ul ul {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding-left: 1.5rem;
-  }
-  section ul li strong {
-    color: var(--color-primary);
+  #links a.button {
+    color: white;
+    background: linear-gradient(135deg, var(--color-primary) 0%, #003d82 100%);
+    box-shadow: 0 4px 15px rgba(0, 85, 164, 0.4);
   }
 
-  section p {
-    margin-bottom: 1.2rem;
-    line-height: 1.6;
-    text-align: left;
+  #links a.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 85, 164, 0.6);
+  }
+
+  #links a.button.secondary {
+    background: linear-gradient(135deg, #ef4135 0%, #c7362d 100%);
+    box-shadow: 0 4px 15px rgba(239, 65, 53, 0.4);
+  }
+
+  #links a.button.secondary:hover {
+    box-shadow: 0 6px 20px rgba(239, 65, 53, 0.6);
   }
 </style>

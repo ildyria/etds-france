@@ -6,7 +6,7 @@ const { label, id } = Astro.props;
   class="flex items-center gap-3 py-1 rounded-md transition duration-200 hover:font-bold hover:text-primary"
 >
   <input type="checkbox" id={id} class="accent-primary w-5 h-5 mr-2 align-middle" />
-  <label for={id} class="flex-1 cursor-pointer text-sm select-none">
+  <label for={id} class="flex-1 cursor-pointer text-xs md:text-sm select-none">
     {label}
   </label>
 </li>

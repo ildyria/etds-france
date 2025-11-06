@@ -6,6 +6,8 @@
   --color-background: #f9f9f9;
   --color-text: #333333;
   --color-muted: #666666;
+  --color-p: #4b5563;
+  --color-tagline: #374151;
 }
 
 a {
@@ -22,6 +24,7 @@ a:focus {
   font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
     Arial, sans-serif;
   min-height: 100vh;
+  padding-bottom: 4rem;
 }
 
 main {

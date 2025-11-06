@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import BackgroundImage from "../components/BackgroundImage.astro";
 import Hero from "../components/Hero.astro";
+import HalfColumn from "../components/HalfColumn.astro";
+import H2 from "../components/H2.astro";
 ---
 
 <Layout>
@@ -11,8 +13,8 @@ import Hero from "../components/Hero.astro";
     <main class="max-w-5xl!">
       <Hero title="Bénévolat" />
 
-      <section>
-        <p class="mx-auto w-3/4 text-justify">
+      <section class="px-6 md:text-base text-sm">
+        <p class="mx-auto md:w-3/4 text-justify">
           L'ETDS n'est possible que gr&acirc;ce aux nombreuses heures de
           b&eacute;n&eacute;volat que nous accomplissons en tant que
           communaut&eacute;. Outre l'organisation de l'&eacute;v&eacute;nement,
@@ -27,8 +29,8 @@ import Hero from "../components/Hero.astro";
       </section>
 
       <section class="w-full flex flex-wrap">
-        <div class="w-1/2">
-          <h2>Heures d'aide obligatoires (OHH)</h2>
+        <HalfColumn>
+          <H2>Heures d'aide obligatoires (OHH)</H2>
           <p>
             Tous les capitaines d'&eacute;quipe reçoivent une liste de
             cr&eacute;neaux obligatoires pour leur &eacute;quipe, constituant au
@@ -36,7 +38,7 @@ import Hero from "../components/Hero.astro";
             d'&eacute;quipe de r&eacute;partir ces cr&eacute;neaux entre les
             membres de leur &eacute;quipe.
           </p>
-          <h2>Cr&eacute;neaux de b&eacute;n&eacute;volat</h2>
+          <H2>Cr&eacute;neaux de b&eacute;n&eacute;volat</H2>
           <p>
             En plus des heures d'aide obligatoires, de nombreuses personnes
             contribuent &agrave; l'ETDS en acceptant des cr&eacute;neaux de
@@ -46,9 +48,9 @@ import Hero from "../components/Hero.astro";
             Maus pour chaque heure de b&eacute;n&eacute;volat
             suppl&eacute;mentaire.
           </p>
-        </div>
-        <div class="w-1/2">
-          <h2>Super volunteers</h2>
+        </HalfColumn>
+        <HalfColumn>
+          <H2>Super volunteers</H2>
           <p>
             Les super volunteers sont l'&eacute;pine dorsale de l'ETDS et sont
             les personnes qui font du b&eacute;n&eacute;volat tout le week-end
@@ -60,69 +62,15 @@ import Hero from "../components/Hero.astro";
             se fait dans le portail via ce lien. Nous vous ajouterons ensuite
             manuellement au syst&egrave;me en tant que super-volunteer.
           </p>
-          <h2>Contactez-nous</h2>
+          <H2>Contactez-nous</H2>
           <p>
             Pour toute question concernant les super volunteers ou l'arbitrage,
-            contactez votre capitaine d'&eacute;quipe ou nous. Nous sommes
+            contactez votre capitaine d'&eacute;quipe. Nous sommes
             heureux de vous aider. Ensemble, nous pouvons cr&eacute;er un
-            &eacute;v&eacute;nement formidable. info@etds-aachen.de.
+            &eacute;v&eacute;nement formidable.
           </p>
-        </div>
+        </HalfColumn>
       </section>
     </main>
   </div>
 </Layout>
-
-<style>
-  section h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-primary);
-    margin-top: 0.5rem;
-    margin-bottom: 0rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-  section {
-    font-size: 0.91rem;
-  }
-  section div {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  section h2 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-top: 2.2rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-
-  section ul {
-    list-style-type: square;
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  section ul li {
-    color: inherit;
-    font-size: 0.97rem;
-  }
-  section ul li::marker {
-    color: var(--color-secondary);
-  }
-  section ul ul {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding-left: 1.5rem;
-  }
-  section ul li strong {
-    color: var(--color-primary);
-  }
-
-  section p {
-    margin-bottom: 1.2rem;
-    line-height: 1.6;
-  }
-</style>

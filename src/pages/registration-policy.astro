@@ -14,8 +14,8 @@ import HalfColumn from "../components/HalfColumn.astro";
     <main class="max-w-5xl!">
       <Hero title="Politique d’inscription" />
 
-      <section>
-        <p class="mx-auto w-full md:w-3/4 text-justify">
+      <section class="px-6">
+        <p class="mx-auto w-full md:w-3/4 text-justify text-sm md:text-base">
           En vous inscrivant à l’European Tournament for Dancing Students (ETDS)
           en tant que participant, capitaine d’équipe, juge ou bénévole, vous
           acceptez la présente politique d’inscription. Cette politique vous
@@ -23,37 +23,37 @@ import HalfColumn from "../components/HalfColumn.astro";
           tant que participant à l’ETDS. Veuillez lire attentivement cette page
           afin de connaître les règles applicables.
         </p>
-        <h3 class="text-center!">Le plus important :</h3>
 
-        <table class="mx-auto">
+        <!-- <h3 class="text-center!">Le plus important :</h3>
+        <table class="mx-auto text-sm md:text-base">
           <tbody>
             <tr>
               <td>Début des inscriptions</td>
               <td class="font-bold text-primary px-4">8 août</td>
-              <td></td>
+              <td class="hidden md:block"></td>
             </tr>
             <tr>
               <td>Tirage au sort</td>
               <td class="font-bold text-primary px-4">24 août</td>
-              <td></td>
+              <td class="hidden md:block"></td>
             </tr>
             <tr>
               <td>Date limite des goodies</td>
               <td class="font-bold text-primary px-4">31 août</td>
-              <td></td>
+              <td class="hidden md:block"></td>
             </tr>
             <tr>
               <td>Date limite de paiement</td>
               <td class="font-bold text-primary px-4">16 septembre</td>
-              <td>Tournoi et goodies</td>
+              <td  class="hidden md:block">Tournoi et goodies</td>
             </tr>
             <tr>
               <td>Date limite de remboursement à 100&nbsp;%</td>
               <td class="font-bold text-primary px-4">23 septembre</td>
-              <td>après le 23, un éventuel remboursement sera calculé après l’ETDS</td>
+              <td  class="hidden md:block">après le 23, un éventuel remboursement sera calculé après l’ETDS</td>
             </tr>
           </tbody>
-        </table>
+        </table> -->
       </section>
 
       <section class="w-full flex flex-wrap">
@@ -239,7 +239,7 @@ import HalfColumn from "../components/HalfColumn.astro";
             inclut, sans s’y limiter, les dommages causés par&nbsp;:
           </p>
           <UL>
-            <li>Fumer (/ vapoter)</li>
+            <li>Fumer/vapoter</li>
             <li>Porter des chaussures d’extérieur dans des zones non autorisées</li>
             <li>Porter des talons hauts sans protège-talons</li>
           </UL>
@@ -248,57 +248,3 @@ import HalfColumn from "../components/HalfColumn.astro";
     </main>
   </div>
 </Layout>
-
-<style>
-  section h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-primary);
-    margin-top: 1.8rem;
-    margin-bottom: 0.8rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-  section {
-    font-size: 0.91rem;
-  }
-  section div {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  section h2 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-primary);
-    margin-top: 2.2rem;
-    margin-bottom: 1rem;
-    letter-spacing: 0.01em;
-    text-align: left;
-  }
-
-  section ul {
-    list-style-type: square;
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  section ul li {
-    color: inherit;
-    font-size: 0.97rem;
-  }
-  section ul li::marker {
-    color: var(--color-secondary);
-  }
-  section ul ul {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding-left: 1.5rem;
-  }
-  section ul li strong {
-    color: var(--color-primary);
-  }
-
-  section p {
-    margin-bottom: 1.2rem;
-    line-height: 1.6;
-  }
-</style>
