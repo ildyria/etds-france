@@ -2,8 +2,6 @@
 
 ## Beginner guide
 
-[ ] - Highway to hell in Beginner guide "So what actually is the ETDS?"
-[ ] - Steam punk in Beginner guide "So this theme you are talking about...?"
 [ ] - Link registration policy
 [ ] - Link what should I take
 [ ] - Links how to get there

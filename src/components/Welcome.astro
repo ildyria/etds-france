@@ -1,25 +1,37 @@
 ---
 import BackgroundImage from "./BackgroundImage.astro";
+import Contact from "./Contact.astro";
 import H2 from "./H2.astro";
 ---
 
 <div id="container">
   <BackgroundImage />
   <main class="flex flex-col items-center">
-    <section class="flex items-center flex-col justify-center md:px-16 py-4 text-center min-h-[60vh]">
+    <section
+      class="flex items-center flex-col justify-center md:px-16 py-4 text-center min-h-[60vh]"
+    >
       <div class="logo">
-        <h1 class="title py-2 text-[2rem] md:text-7xl font-extrabold">ETDS &mdash; &Eacute;quipe France</h1>
-        <p class="text-primary font-semibold text-xl md:text-3xl md:mt-12 mb-0!">Tournoi Européen pour les Étudiants Danseurs</p>
-        <p class="text-p font-medium text-base md:text-2xl mt-4 md:mt-2">European Tournament<br class="md:hidden"> for Dancing Students</p>
+        <h1 class="title py-2 text-[2rem] md:text-7xl font-extrabold">
+          ETDS &mdash; &Eacute;quipe France
+        </h1>
+        <p
+          class="text-primary font-semibold text-xl md:text-3xl md:mt-12 mb-0!"
+        >
+          Tournoi Européen pour les Étudiants Danseurs
+        </p>
+        <p class="text-p font-medium text-base md:text-2xl mt-4 md:mt-2">
+          European Tournament<br class="md:hidden" /> for Dancing Students
+        </p>
       </div>
       <p class="text-tagline text-lg md:text-2xl max-w-xl px-6 py-4">
         Rassembler les étudiants danseurs d'Europe pour célébrer la passion de
         la danse
       </p>
       <section id="links">
-        <a class="button" href="#about">En savoir plus</a>
-        <a class="button secondary" href="#contact">Rejoindre l'&eacute;quipe</a
-        >
+        <a class="button" href="/photos-videos">Voir les photos et videos</a>
+        <!-- <a class="button" href="#about">En savoir plus</a> -->
+        <!-- <a class="button secondary" href="#contact">Rejoindre l'&eacute;quipe</a> -->
+        <a class="button secondary" href="/the-team">Rejoindre l'&eacute;quipe</a>
       </section>
     </section>
 
@@ -28,7 +40,7 @@ import H2 from "./H2.astro";
       <p class="pb-4 text-sm md:text-lg text-p text-center max-w-4xl mx-auto">
         L'European Tournament for Dancing Students (ETDS) est un événement
         bi-annuel qui réunit des étudiants danseurs de toute l'Europe. L'ETDS se
-        déroule deux fois par an : <br>
+        déroule deux fois par an : <br />
         <strong>pendant la Pentecôte</strong> et <strong>mi-octobre</strong>.
       </p>
       <p class="pb-4 text-sm md:text-lg text-p text-center max-w-4xl mx-auto">
@@ -44,49 +56,65 @@ import H2 from "./H2.astro";
           >plus grande d'Europe</strong
         >, de taille comparables &agrave; celles des tournois comme Wuppertal ou
         Blackpool. En plus des comp&eacute;titions, tous le samedi et dimanche
-        soir et toute la nuit la musique continue. Offrant des opportunit&eacute;s uniques
-        de rencontrer et danser avec des &eacute;tudiants venus de toute l'Europe.<br />
+        soir et toute la nuit la musique continue. Offrant des
+        opportunit&eacute;s uniques de rencontrer et danser avec des
+        &eacute;tudiants venus de toute l'Europe.<br />
         <br />
-        Celles et ceux qui ont dans&eacute; toute la nuit sont appel&eacute;s les <strong>survivors</strong>.<br />
-        Une photo de groupe est g&eacute;n&eacute;ralement faite vers 6 heurs du matin!
+        Celles et ceux qui ont dans&eacute; toute la nuit sont appel&eacute;s les
+        <strong>survivors</strong>.<br />
+        Une photo de groupe est g&eacute;n&eacute;ralement organis&eacute;e vers 6 heurs du
+        matin!
       </p>
       <section id="links" class="flex justify-center">
         <a class="button" href="/photos-videos">Voir les photos et videos</a>
       </section>
     </section>
 
+    <section id="when" class="max-w-3xl px-6 md:px-0 mx-auto w-full py-4 my-2">
+      <H2 class="text-center text-2xl md:text-4xl mb-8">La prochaine &eacute;dition, c'est quand ?</H2>
+      <p class="pb-4 text-sm md:text-lg text-p text-center max-w-lg mx-auto">
+        La prochaine édition se déroulera &agrave; <strong class="text-primary">Enschede</strong> aux Pays-Bas sur le weekend de Pentecôte, c'est à
+        dire du<br><strong class="text-primary">Vendredi 22 au Lundi (férié) 25 mai 2026</strong>.
+      </p>
+      <p class="pb-4 text-sm md:text-lg text-p text-center max-w-lg mx-auto">
+        L'addresse exacte est <a href="https://maps.app.goo.gl/5L19Ee1r26ghXn2D9" class="font-bold">De Hems 20, 7522 NL</a>,<br>
+        dans le centre sportif de l'universit&eacute; de Twente.
+      </p>
+      <p class="pb-4 text-sm md:text-lg text-p text-center max-w-lg mx-auto">
+        Chaque ETDS &agrave; son propre th&egrave;me et style et pour cette &eacute;dition
+        ce sera <strong>Au pays des merveilles ! (Wonderland)</strong>
+      </p>
+    </section>
+
     <section id="features" class="max-w-4xl mx-auto w-full px-6 py-4 my-2">
-      <H2 class="text-center text-4xl mb-8">En quelque mots</H2>
+      <H2 class="text-center text-2xl md:text-4xl mb-8">En quelque mots</H2>
       <div class="features-grid">
         <div class="feature-card">
           <div class="icon">🎭</div>
           <h3>Compétitions</h3>
-          <p class="text-p text-center max-w-4xl mx-auto">Participez à deux compétitions quelque soit votre niveau</p>
+          <p class="text-p text-center max-w-4xl mx-auto">
+            Participez à deux compétitions quelque soit votre niveau
+          </p>
         </div>
         <div class="feature-card">
           <div class="icon">🌍</div>
           <h3>Échanges culturels</h3>
-          <p class="text-p text-center max-w-4xl mx-auto">Rencontrez des danseurs de toute l'Europe</p>
+          <p class="text-p text-center max-w-4xl mx-auto">
+            Rencontrez des danseurs de toute l'Europe
+          </p>
         </div>
         <div class="feature-card">
           <div class="icon">🎉</div>
           <h3>Soirées</h3>
-          <p class="text-p text-center max-w-4xl mx-auto">Profitez de soirées festives et conviviales</p>
+          <p class="text-p text-center max-w-4xl mx-auto">
+            Profitez de soirées festives et conviviales
+          </p>
         </div>
       </div>
     </section>
   </main>
 
-  <div id="contact" class="box mt-12 mx-6 md:mx-auto">
-    <H2 class="text-center text-4xl mb-8 mt-0">Nous contacter</H2>
-    <p class="text-p text-center max-w-4xl mx-auto"> Pour plus d'informations sur l'ETDS - <a href="/the-team"
-      >&Eacute;quipe France</a
-    >, contactez-nous par email &agrave; <a href="mailto:beviguier@gmail.com"
-      >beviguier@gmail.com</a
-    > ou sur instagram (<a href="http://instagram.com/phd.dance">@phd.dance</a
-    >).
-    </p>
-  </div>
+  <Contact />
 </div>
 
 <style>
